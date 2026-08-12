@@ -2428,14 +2428,79 @@
                                 }
                             }
 
+                            @media screen and (max-width: 767px) {
+                                .map-tooltip-card {
+                                    min-width: 170px;
+                                    max-width: 72vw;
+                                    padding: 0.6rem 0.75rem;
+                                }
+
+                                .map-city-title {
+                                    font-size: 0.82rem;
+                                }
+
+                                .map-shop-address {
+                                    white-space: normal;
+                                    font-size: 0.7rem;
+                                    word-break: break-word;
+                                    margin-bottom: 0.35rem;
+                                }
+
+                                .map-dispatch-tag {
+                                    font-size: 0.62rem;
+                                    padding: 0.15rem 0.45rem;
+                                }
+
+                                /* Left side pins (Oregon & California) - Prevent left edge overflow */
+                                .map-pin[style*="left: 21"],
+                                .map-pin[style*="left: 19"] {
+                                    z-index: 30;
+                                }
+                                .map-pin[style*="left: 21"] .map-tooltip-card,
+                                .map-pin[style*="left: 19"] .map-tooltip-card {
+                                    left: -12px !important;
+                                    transform: translateY(6px) !important;
+                                }
+                                .map-pin[style*="left: 21"].is-active .map-tooltip-card,
+                                .map-pin[style*="left: 19"].is-active .map-tooltip-card,
+                                .map-pin[style*="left: 21"]:hover .map-tooltip-card,
+                                .map-pin[style*="left: 19"]:hover .map-tooltip-card {
+                                    transform: translateY(0) !important;
+                                }
+                                .map-pin[style*="left: 21"] .map-tooltip-card::after,
+                                .map-pin[style*="left: 19"] .map-tooltip-card::after {
+                                    left: 18px !important;
+                                    transform: none !important;
+                                }
+
+                                /* Right side pins (New York & Florida) - Prevent right edge overflow */
+                                .map-pin[style*="left: 84"],
+                                .map-pin[style*="left: 78"] {
+                                    z-index: 30;
+                                }
+                                .map-pin[style*="left: 84"] .map-tooltip-card,
+                                .map-pin[style*="left: 78"] .map-tooltip-card {
+                                    left: auto !important;
+                                    right: -12px !important;
+                                    transform: translateY(6px) !important;
+                                }
+                                .map-pin[style*="left: 84"].is-active .map-tooltip-card,
+                                .map-pin[style*="left: 78"].is-active .map-tooltip-card,
+                                .map-pin[style*="left: 84"]:hover .map-tooltip-card,
+                                .map-pin[style*="left: 78"]:hover .map-tooltip-card {
+                                    transform: translateY(0) !important;
+                                }
+                                .map-pin[style*="left: 84"] .map-tooltip-card::after,
+                                .map-pin[style*="left: 78"] .map-tooltip-card::after {
+                                    left: auto !important;
+                                    right: 18px !important;
+                                    transform: none !important;
+                                }
+                            }
+
                             @media screen and (max-width: 479px) {
                                 .map-heading {
                                     font-size: 2.2rem;
-                                }
-
-                                .map-tooltip {
-                                    padding: 0.4rem 0.8rem;
-                                    font-size: 0.75rem;
                                 }
                             }
                         </style>
