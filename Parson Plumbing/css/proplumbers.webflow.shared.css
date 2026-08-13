@@ -3495,7 +3495,7 @@ blockquote {
     border: 1px solid var(--brand--light-blue);
     background-color: var(--brand--light-blue);
     font-family: var(--font--heading-font);
-    color: var(--neutral--black-900);
+    color: white;
     border-radius: 1.875rem;
     flex-flow: row;
     justify-content: center;
@@ -3558,7 +3558,7 @@ blockquote {
 
 .button.is-nav {
     grid-column-gap: .5rem;
-    color: var(--neutral--black-900);
+    color: white;
     justify-content: flex-start;
     align-items: center;
 }
@@ -4535,8 +4535,8 @@ blockquote {
 }
 
 .nav-link.w--current {
-    color: var(--neutral--white-200);
-    background-color: #12316d;
+    color: white !important;
+    background-color: var(--brand--light-blue);
     border-radius: 8px;
 }
 
