@@ -1,0 +1,601 @@
+MASTER INSTRUCTION FOR ANTIGRAVITY
+
+You are working on an existing master landing page template for plumbing businesses.
+
+The template is already designed and coded. Your job is NOT to redesign, improve, optimize, restructure, or rewrite the landing page.
+
+Your ONLY job is to research the provided plumbing business and replace the specified dummy text/content with accurate business-specific content.
+
+BUSINESS INFORMATION
+
+I will provide business information separately, such as:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Use the provided information as the starting point for your research.
+
+Before editing the landing page, research the business as thoroughly as reasonably possible using the provided business details and publicly available information.
+
+Prioritize information from:
+
+Official business website
+
+Official business pages
+
+Public business listings
+
+Publicly available business information
+
+Other reliable public sources
+
+Do not assume that information is true simply because it appears somewhere.
+
+When information is available from reliable sources, use the real information.
+
+If specific information cannot be found after reasonable research, create only minimal business-relevant wording that is realistic and consistent with the known business information.
+
+NEVER invent specific facts such as certifications, awards, years in business, guarantees, licenses, memberships, exact claims, employee counts, locations, reviews, or other factual claims unless they can be supported by research.
+
+CRITICAL EDITING RULE
+
+You must modify ONLY the content specifically identified below.
+
+DO NOT:
+
+Change the landing page layout
+
+Change the HTML structure
+
+Change CSS
+
+Change JavaScript
+
+Change animations
+
+Change spacing
+
+Change colors
+
+Change fonts
+
+Change responsive behavior
+
+Change components
+
+Change buttons unless their TEXT is specifically included in the instructions below
+
+Add new sections
+
+Remove sections
+
+Add new elements
+
+Remove elements
+
+Change images
+
+Change image URLs
+
+Change links unless the text itself is specifically required to be changed
+
+Change functionality
+
+Change the design
+
+Change code outside the specified content
+
+Modify any text outside the specified locations
+
+Change the number of cards
+
+Change the number of headings
+
+Change the number of words beyond the rules below
+
+The existing template is the master template and must remain structurally identical.
+
+Think of this task as:
+
+FIND → RESEARCH → REPLACE TEXT ONLY
+
+Nothing else.
+
+EXACT CONTENT AREAS TO MODIFY
+
+1. Line 9
+
+Change the title on line 9 to the exact business name of the plumbing business being worked on.
+
+Do not add extra words to the business name.
+
+2. Lines 358 to 395
+
+These lines contain the announcement bar.
+
+Replace the announcement bar text with business-specific information based on the research.
+
+The announcement bar must NOT contain a flat price.
+
+Use useful real business information such as the business name, phone number, service information, location, or another relevant business-specific fact when supported by research.
+
+Do not change the announcement bar structure or styling.
+
+Only replace its text content.
+
+3. Line 479
+
+Change the text on line 479 according to the researched business.
+
+The heading must be specifically relevant to the plumbing business and company details and should not look like same ai genrated.
+
+Use the business's actual positioning, services, location, or other researched information where appropriate.
+
+Do not change the element itself.
+
+Only change its text.
+
+4. Lines 609 to 726
+
+All text in this section must be replaced with real business-specific information based on research.
+
+This section must contain actual facts, characteristics, services, strengths, or relevant points about the plumbing business.
+
+Every piece of text in this range must be checked.
+
+Do not leave dummy business-related text in this section.
+
+Do not invent factual claims.
+
+Do not change the structure, number of elements, or layout.
+
+Only replace the existing text.
+
+5. Lines 731 to 775
+
+This is the About section.
+
+Replace the text in this section with original information about the specific plumbing business being researched.
+
+The content must reflect the actual business.
+
+Use information such as what the company does, where it operates, its services, approach, history, or other publicly supported information when available.
+
+Do not invent facts.
+
+Do not change the section structure.
+
+Only replace the text.
+
+6. Line 940
+
+Customize the text on line 940 according to the researched plumbing business.
+
+The text must be relevant to the actual business and must fit the purpose and position of the existing element.
+
+Only replace the text.
+
+7. Lines 1132 and 1133
+
+Change the text on lines 1132 and 1133 according to the researched business.
+
+Both lines must contain business-specific content.
+
+Only replace their text.
+
+Do not change their structure.
+
+8. Lines 1141, 1153 and 1165
+
+These three headings must become the names of services actually offered by the plumbing business.
+
+Use three real services from the researched business.
+
+Do not invent services.
+
+Do not add more services.
+
+Do not remove any of the three service headings.
+
+The number of service headings must remain exactly THREE.
+
+9. Lines 1182 to 1232
+
+This entire section describes the company's work process.
+
+Replace ALL text in this section with a process based on the researched business.
+
+The section should explain how this specific company works with customers, based on information available from its website or reliable public information.
+
+The process must be realistic and business-specific.
+
+Do not invent unsupported company procedures.
+
+If the exact process is not publicly available, create a generic but realistic plumbing service process that does not falsely claim to be a documented company procedure.
+
+Do not change the number of steps, elements, or structure.
+
+Only replace text.
+
+10. Lines 1314 to 1746
+
+This is the customer review section.
+
+Every review card in this section must contain a different review.
+
+STRICT REQUIREMENTS:
+
+No review may be repeated
+
+Every review must be different
+
+Reviews must be in English only
+
+Do not use any other language
+
+The reviews must relate to the plumbing business
+
+The business name must be used in the reviews
+
+Do not change the number of review cards
+
+Do not remove any review card
+
+Do not add any review card
+
+IMPORTANT:
+
+Do NOT present invented reviews as real customer reviews.
+
+If actual publicly available customer reviews can be reliably researched, use appropriately paraphrased business-specific review content while keeping it clearly suitable for the template.
+
+If there are not enough real reviews to populate every existing card, create realistic review-style placeholder content based only on known business services and customer experience patterns, but DO NOT fabricate specific factual events, names, ratings, or claims that imply they are verified real customers.
+
+Every card must still be unique.
+
+11. Lines 2030 to 2032
+
+Change the text on these lines according to the researched business.
+
+The content must be specific and relevant to the business.
+
+Only replace the text.
+
+12. Line 2231
+
+The text inside the div on line 2231 must be changed according to the researched business.
+
+Use business-specific information.
+
+Do not change the div structure, classes, styling, attributes, or functionality.
+
+Only replace the text.
+
+13. Lines 3009 to 3149
+
+This is the footer.
+
+Replace the applicable footer information with the researched business information.
+
+This includes information such as:
+
+Business name
+
+Phone number
+
+Email
+
+Location
+
+Services
+
+Other business-specific footer text
+
+Every applicable piece of footer information must correspond to the business being worked on.
+
+Use only information that is provided or reliably researched.
+
+Do not change the footer structure, layout, styling, links structure, or functionality.
+
+Only replace the relevant text/content.
+
+CONTENT RULES
+
+These rules are ABSOLUTE.
+
+RULE 1 — NEVER EXCEED DUMMY TEXT LENGTH
+
+The generated content must NOT be longer than the existing dummy text.
+
+If the dummy text contains 7 words, the replacement must contain a maximum of 7 words.
+
+If the dummy text contains 10 words, the replacement must contain a maximum of 10 words.
+
+NEVER increase the word count of the existing dummy text.
+
+The safest approach is to keep the replacement equal to or shorter than the existing dummy text.
+
+Do not expand short text into long text.
+
+Do not add extra sentences.
+
+Do not add extra words simply because more information is available.
+
+For every individual text element, compare the replacement against its existing dummy text before saving.
+
+RULE 2 — ENGLISH ONLY
+
+ALL generated text must be in English.
+
+No Urdu.
+
+No Roman Urdu.
+
+No Hindi.
+
+No Arabic.
+
+No other language.
+
+RULE 3 — NO SYMBOLS, ICONS OR SPECIAL CHARACTERS IN GENERATED TEXT
+
+Generated textual content must not contain unnecessary symbols, icons, emojis, decorative characters, or special characters.
+
+Use normal English text.
+
+Do not insert emojis.
+
+Do not insert icons.
+
+Do not insert decorative symbols.
+
+Do not use special characters as decoration.
+
+Existing code syntax is NOT considered generated text and must remain untouched.
+
+RULE 4 — TRUTH FIRST
+
+Research the business first.
+
+Use real information whenever possible.
+
+Priority:
+
+REAL VERIFIED BUSINESS INFORMATION
+
+then
+
+REAL PUBLIC BUSINESS INFORMATION
+
+then, only when necessary,
+
+REALISTIC BUSINESS-RELEVANT WORDING
+
+Never create impressive sounding claims just to make the website look better.
+
+Never invent:
+
+Awards
+
+Certifications
+
+Licenses
+
+Guarantees
+
+Years of experience
+
+Exact customer counts
+
+Exact employee counts
+
+Locations
+
+Service areas
+
+Memberships
+
+Reviews
+
+Testimonials
+
+Prices
+
+Special offers
+
+Company history
+
+Accreditations
+
+Partnerships
+
+Claims of being number one
+
+Claims of being the best
+
+Claims of being the largest
+
+Any other specific factual claim
+
+unless supported by research or provided business information.
+
+RULE 5 — BUSINESS NAME
+
+Whenever the instructions specifically require the business name, use the actual business name exactly as researched/provided.
+
+Do not shorten it.
+
+Do not create a nickname.
+
+Do not change its spelling.
+
+RULE 6 — SERVICE ACCURACY
+
+Only use services that the business actually provides or that are clearly supported by reliable research.
+
+Do not assume that every plumbing company offers every possible plumbing service.
+
+RULE 7 — DO NOT CHANGE TEMPLATE STRUCTURE
+
+The master template must remain structurally identical.
+
+You are performing CONTENT REPLACEMENT ONLY.
+
+Do not refactor code.
+
+Do not clean up code.
+
+Do not optimize code.
+
+Do not format unrelated code.
+
+Do not rename variables.
+
+Do not rename classes.
+
+Do not modify IDs.
+
+Do not modify attributes.
+
+Do not modify CSS.
+
+Do not modify JavaScript.
+
+Do not modify components.
+
+Do not modify sections.
+
+Do not modify spacing.
+
+Do not modify layout.
+
+Do not modify design.
+
+Do not modify anything outside the explicitly requested content.
+
+FINAL VALIDATION BEFORE COMPLETING THE TASK
+
+Before considering the task complete, perform a strict validation.
+
+Check every requested location:
+
+Line 9
+
+Lines 358 to 395
+
+Line 479
+
+Lines 609 to 726
+
+Lines 731 to 775
+
+Line 940
+
+Lines 1132 and 1133
+
+Lines 1141, 1153 and 1165
+
+Lines 1182 to 1232
+
+Lines 1314 to 1746
+
+Lines 2030 to 2032
+
+Line 2231
+
+Lines 3009 to 3149
+
+Then verify:
+
+Every required text area was updated
+
+No requested area was skipped
+
+No unrelated text was changed
+
+No layout was changed
+
+No CSS was changed
+
+No JavaScript was changed
+
+No HTML structure was changed
+
+No elements were added
+
+No elements were removed
+
+Number of cards remains unchanged
+
+Number of service headings remains unchanged
+
+All generated content is English
+
+No unnecessary symbols or icons were added
+
+No unsupported factual claims were added
+
+Business name is correct
+
+Phone number is correct
+
+Email is correct when available
+
+Footer information is correct
+
+Services are real
+
+Review cards are all different
+
+No review is repeated
+
+No review claims to be a verified customer review unless supported by research
+
+No individual replacement exceeds the word count of its corresponding dummy text
+
+MOST IMPORTANT FINAL INSTRUCTION
+
+DO NOT IMPROVE THE TEMPLATE.
+
+DO NOT REDESIGN THE TEMPLATE.
+
+DO NOT ADD ANYTHING.
+
+DO NOT REMOVE ANYTHING.
+
+DO NOT CHANGE ANYTHING OUTSIDE THE SPECIFIED CONTENT.
+
+DO NOT INCREASE THE CONTENT LENGTH.
+
+DO NOT DECREASE THE NUMBER OF ELEMENTS.
+
+DO NOT CHANGE THE RULES ABOVE.
+
+The existing landing page is the master template.
+
+The business research is used ONLY to replace the specified dummy text.
+
+The final result must be the SAME TEMPLATE with ONLY the requested business-specific text replaced.
+
+Before saving changes, compare the modified file against the original and ensure that the only intentional changes are the specified text/content replacements above.
+
+If any change outside the requested content is detected, revert that change.
+
+END OF INSTRUCTION

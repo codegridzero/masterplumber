@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="govDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2e40"/>
+      <stop offset="100%" stop-color="#0a1520"/>
+    </linearGradient>
+    <linearGradient id="goldSeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#c59b27"/>
+      <stop offset="100%" stop-color="#9e7817"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Starburst/Rays Edge -->
+  <circle cx="100" cy="100" r="96" fill="url(#goldSeal)"/>
+  
+  <!-- Outer Dark Ring -->
+  <circle cx="100" cy="100" r="90" fill="url(#govDark)" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="100" cy="100" r="68" fill="#ffffff" stroke="url(#goldSeal)" stroke-width="3"/>
+
+  <!-- Top Text -->
+  <path id="govArcTop" d="M 20,100 A 80,80 0 0,1 180,100" fill="none"/>
+  <text font-family="'Arial Black', Arial, sans-serif" font-size="10" font-weight="900" fill="#ffd700" text-anchor="middle" letter-spacing="1">
+    <textPath href="#govArcTop" startOffset="50%">STATE LICENSED BOARD</textPath>
+  </text>
+
+  <!-- Bottom Text -->
+  <path id="govArcBottom" d="M 20,100 A 80,80 0 0,0 180,100" fill="none"/>
+  <text font-family="'Arial Black', Arial, sans-serif" font-size="9.5" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">
+    <textPath href="#govArcBottom" startOffset="50%">MASTER PLUMBER CERTIFIED</textPath>
+  </text>
+
+  <!-- Inner Official Seal Content -->
+  <g transform="translate(100, 95)">
+    <!-- Eagle / State Star Top -->
+    <path d="M0,-45 L4,-33 L16,-33 L7,-26 L10,-14 L0,-21 L-10,-14 L-7,-26 L-16,-33 L-4,-33 Z" fill="#c59b27"/>
+    
+    <!-- State License Insignia -->
+    <circle cx="0" cy="4" r="28" fill="#1a2e40" stroke="url(#goldSeal)" stroke-width="2"/>
+    
+    <text x="0" y="-3" font-family="'Arial Black', Arial, sans-serif" font-size="8.5" font-weight="900" fill="#ffffff" text-anchor="middle">OFFICIAL</text>
+    <text x="0" y="7" font-family="Arial, sans-serif" font-size="10" font-weight="900" fill="#ffd700" text-anchor="middle">SEAL</text>
+    <text x="0" y="17" font-family="Arial, sans-serif" font-size="6.5" font-weight="bold" fill="#ffffff" text-anchor="middle">LIC # 48291</text>
+  </g>
+</svg>

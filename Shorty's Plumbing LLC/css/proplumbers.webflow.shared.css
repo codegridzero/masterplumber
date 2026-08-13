@@ -304,7 +304,7 @@ html.w-mod-touch * {
     color: #fff;
     line-height: inherit;
     cursor: pointer;
-    background-color: #3898ec;
+    background-color: var(--color-primary);
     border: 0;
     border-radius: 0;
     padding: 9px 15px;
@@ -583,7 +583,7 @@ label {
 
 .w-input:focus,
 .w-select:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline: 0;
 }
 
@@ -2175,8 +2175,8 @@ textarea.w-select {
 
 :root {
     /* Brand Color Palette */
-    --color-primary: #9ae6ff;
-    --color-secondary: #01205c;
+    --color-primary: #031863;
+    --color-secondary: #BBC92F;
     --color-accent: #ff7c33;
     --color-dark: #0e0e0e;
     --color-light: #f8f8f8;
@@ -2189,8 +2189,8 @@ textarea.w-select {
     --neutral--black-900: var(--color-dark);
     --font--paragraph-font: Generalsans, sans-serif;
     --neutral--white-200: var(--color-light);
-    --brand--light-blue: var(--color-primary);
-    --secondary--dark-blue: var(--color-secondary);
+    --brand--light-blue: var(--color-secondary);
+    --secondary--dark-blue: var(--color-primary);
     --neutral--white-300: #e6e6e6;
     --neutral--black-700: #4d4d4d;
     --neutral--gray-600: #8e8e8e;
@@ -2220,7 +2220,7 @@ textarea.w-select {
     cursor: pointer;
     -webkit-appearance: none;
     appearance: none;
-    background-color: #3898ec;
+    background-color: var(--color-primary);
     border-width: 0;
     border-radius: 0;
     align-items: center;
@@ -2230,7 +2230,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecartopenlinkcount {
-    color: #3898ec;
+    color: var(--color-primary);
     text-align: center;
     background-color: #fff;
     border-radius: 9px;
@@ -2379,7 +2379,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecartquantity:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2405,7 +2405,7 @@ textarea.w-select {
     -webkit-appearance: none;
     appearance: none;
     text-align: center;
-    background-color: #3898ec;
+    background-color: var(--color-primary);
     border-width: 0;
     border-radius: 2px;
     align-items: center;
@@ -2480,7 +2480,7 @@ textarea.w-select {
 }
 
 .w-commerce-commerceaddtocartquantityinput:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2489,7 +2489,7 @@ textarea.w-select {
     cursor: pointer;
     -webkit-appearance: none;
     appearance: none;
-    background-color: #3898ec;
+    background-color: var(--color-primary);
     border-width: 0;
     border-radius: 0;
     align-items: center;
@@ -2511,7 +2511,7 @@ textarea.w-select {
     cursor: pointer;
     -webkit-appearance: none;
     appearance: none;
-    background-color: #3898ec;
+    background-color: var(--color-primary);
     border-width: 0;
     border-radius: 0;
     align-items: center;
@@ -2597,7 +2597,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutemailinput:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2624,7 +2624,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutshippingfullname:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2647,7 +2647,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutshippingstreetaddress:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2670,7 +2670,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutshippingstreetaddressoptional:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2705,7 +2705,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutshippingcity:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2728,7 +2728,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutshippingstateprovince:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2751,7 +2751,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutshippingzippostalcode:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2774,7 +2774,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutshippingcountryselector:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2840,7 +2840,7 @@ textarea.w-select {
 
 .w-commerce-commercecheckoutcardnumber:focus,
 .w-commerce-commercecheckoutcardnumber.-wfp-focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2865,7 +2865,7 @@ textarea.w-select {
 
 .w-commerce-commercecheckoutcardexpirationdate:focus,
 .w-commerce-commercecheckoutcardexpirationdate.-wfp-focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2890,7 +2890,7 @@ textarea.w-select {
 
 .w-commerce-commercecheckoutcardsecuritycode:focus,
 .w-commerce-commercecheckoutcardsecuritycode.-wfp-focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2932,7 +2932,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutbillingfullname:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2955,7 +2955,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutbillingstreetaddress:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -2978,7 +2978,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutbillingstreetaddressoptional:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -3001,7 +3001,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutbillingcity:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -3024,7 +3024,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutbillingstateprovince:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -3047,7 +3047,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutbillingzippostalcode:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -3070,7 +3070,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutbillingcountryselector:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -3170,7 +3170,7 @@ textarea.w-select {
 }
 
 .w-commerce-commercecheckoutdiscountsinput:focus {
-    border-color: #3898ec;
+    border-color: var(--color-primary);
     outline-style: none;
 }
 
@@ -3179,7 +3179,7 @@ textarea.w-select {
     cursor: pointer;
     -webkit-appearance: none;
     appearance: none;
-    background-color: #3898ec;
+    background-color: var(--color-primary);
     border-width: 0;
     border-radius: 3px;
     flex-grow: 0;
@@ -3198,7 +3198,7 @@ textarea.w-select {
     -webkit-appearance: none;
     appearance: none;
     text-align: center;
-    background-color: #3898ec;
+    background-color: var(--color-primary);
     border-width: 0;
     border-radius: 3px;
     align-items: center;
@@ -3525,7 +3525,7 @@ blockquote {
     box-shadow: none;
     font-family: var(--font--paragraph-font);
     background-color: #0000;
-    border: 1px solid #12316d;
+    border: 1px solid var(--color-primary);
     margin-left: 0;
     font-size: 1rem;
     font-weight: 500;
@@ -4536,7 +4536,7 @@ blockquote {
 
 .nav-link.w--current {
     color: var(--neutral--white-200);
-    background-color: #12316d;
+    background-color: var(--color-primary);
     border-radius: 8px;
 }
 
@@ -5230,7 +5230,7 @@ blockquote {
 }
 
 .footer-bottom-content {
-    border-top: 1px solid #12316d;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
     justify-content: center;
     align-items: center;
     padding-top: 1.875rem;
