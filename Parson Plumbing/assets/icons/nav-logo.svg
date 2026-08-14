@@ -1,30 +1,6 @@
-<svg width="250" height="60" viewBox="0 0 250 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <style>
-        .brand-title { font-family: 'Arial Black', 'Impact', 'Montserrat', sans-serif; font-weight: 900; font-size: 30px; fill: #00C2FF; letter-spacing: 1.5px; }
-        .brand-sub { font-family: 'Arial', 'Helvetica', sans-serif; font-weight: 800; font-size: 10px; fill: #FFFFFF; letter-spacing: 1.6px; }
-    </style>
-    <!-- Dark Blue Emblem Circle -->
-    <circle cx="30" cy="30" r="28" fill="#005B8E" />
-
-    <!-- Pipe "P" Icon -->
-    <!-- Top Flange -->
-    <rect x="13.5" y="11" width="13" height="4.5" rx="1.5" fill="#E8F7FA" />
-    <!-- Bottom Flange -->
-    <rect x="13.5" y="44.5" width="13" height="4.5" rx="1.5" fill="#E8F7FA" />
-    <!-- Vertical Pipe Body -->
-    <rect x="16" y="14" width="8" height="32" fill="#E8F7FA" />
-    <!-- Middle Joint Flange -->
-    <rect x="13.5" y="28.5" width="13" height="4.5" rx="1.5" fill="#E8F7FA" />
-
-    <!-- P Loop Outer Arch -->
-    <path d="M 21.5 14.5 H 34 C 41.5 14.5 47 19.5 47 26.5 C 47 33.5 41.5 33 34 33 H 21.5 V 14.5 Z" fill="#E8F7FA" />
-    <!-- P Loop Inner Hole -->
-    <path d="M 24 20 H 33 C 36 20 38.5 22 38.5 25.5 C 38.5 29 36 28.5 33 28.5 H 24 V 20 Z" fill="#005B8E" />
-
-    <!-- Water Droplet Inside P Loop -->
-    <path d="M 28.5 20.5 C 28.5 20.5 24 25.2 24 27.5 C 24 30 26 31.8 28.5 31.8 C 31 31.8 33 30 33 27.5 C 33 25.2 28.5 20.5 28.5 20.5 Z" fill="#00C2FF" />
-
-    <!-- Brand Typography -->
-    <text x="68" y="34" class="brand-title">PARSON</text>
-    <text x="68" y="48.5" class="brand-sub">PLUMBING AND DRAINS</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="207" height="40" viewBox="0 0 207 40">
+  <g fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="103.5" y="18" font-size="14" font-weight="800" letter-spacing="0.8">PLUMBING</text>
+    <text x="103.5" y="32" font-size="8.5" font-weight="600" letter-spacing="2.1">COMPANY</text>
+  </g>
 </svg>
