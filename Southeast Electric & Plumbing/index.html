@@ -1,0 +1,3053 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. # -->
+<!-- Last Published: Sun Apr 05 2026 12:36:28 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="proplumbers.webflow.io" data-wf-page="6702aafe001d87443fcc1b19"
+    data-wf-site="6702aafe001d87443fcc1b12" data-wf-status="1" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Southeast Electric & Plumbing</title>
+    <meta content="ProPlumbers - Webflow E-commerce website template" property="og:title" />
+    <meta content="ProPlumbers - Webflow E-commerce website template" name="twitter:title" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="css/proplumbers.webflow.shared.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        ! function (o, c) {
+            var n = c.documentElement,
+                t = " w-mod-";
+            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+        }(window, document);
+    </script>
+    <link href="assets/icons/favicon-32.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="assets/icons/apple-touch-icon-256.png" rel="apple-touch-icon" />
+    <script type="text/javascript">
+        window.__WEBFLOW_CURRENCY_SETTINGS = {
+            "currencyCode": "USD",
+            "symbol": "$",
+            "decimal": ".",
+            "fractionDigits": 2,
+            "group": ",",
+            "template": "{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}",
+            "hideDecimalForWholeNumbers": false
+        };
+    </script>
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" />
+    <script src="js/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            custom: {
+                families: ["Satoshi", "Generalsans", "Inter", "Roboto", "Roboto Mono"],
+                urls: ["css/fonts.css"]
+            }
+        });
+    </script>
+    <style>
+        /* Hide Floating Made in Webflow Badge */
+        .w-webflow-badge,
+        a.w-webflow-badge,
+        [class*="webflow-badge"] {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            height: 0 !important;
+            width: 0 !important;
+            position: absolute !important;
+            top: -9999px !important;
+            left: -9999px !important;
+        }
+
+        /* Google My Business Hero Badge */
+        .header-component {
+            overflow: visible !important;
+        }
+
+        .header-bottom-content {
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden !important;
+            border-radius: 0.75rem;
+            margin: 0 auto;
+        }
+
+        .header-hedline {
+            padding-top: 8px;
+            padding-bottom: 4px;
+        }
+
+        .gmb-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #1e293b;
+            transition: all 0.25s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+            position: relative;
+            z-index: 10;
+        }
+
+        .gmb-hero-badge:hover {
+            background: #ffffff;
+            border-color: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            color: #0f172a;
+            transform: scale(1.02);
+        }
+
+        .gmb-logo-box {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            flex-shrink: 0;
+        }
+
+        .gmb-rating-val {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #0f172a;
+            line-height: 1;
+        }
+
+        .gmb-stars-row {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .gmb-text-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #475569;
+            line-height: 1;
+            letter-spacing: 0.01em;
+        }
+
+        @media (max-width: 479px) {
+            .gmb-hero-badge {
+                padding: 0.4rem 0.85rem;
+                gap: 0.45rem;
+            }
+
+            .gmb-text-label {
+                font-size: 0.8rem;
+            }
+
+            .gmb-stars-row svg {
+                width: 13px;
+                height: 13px;
+            }
+        }
+
+        /* About Section Scroll Reveal & Responsive Alignment Fix */
+        .section-about {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .about-component {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 1060px;
+            margin: 0 auto;
+            gap: 0.25rem;
+        }
+
+        .about-display-overflow {
+            width: 100% !important;
+            max-width: 1060px !important;
+            position: relative !important;
+            overflow: hidden !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            text-align: center !important;
+            margin: 0 auto !important;
+        }
+
+        .about-display-overflow._02,
+        .about-display-overflow._03 {
+            max-width: 100% !important;
+        }
+
+        .about-display-overflow._04 {
+            max-width: 100% !important;
+        }
+
+        /* Single Line Desktop Layout (white-space: nowrap) with Fluid Scale for Mobile/Tablet */
+        .about-display-text,
+        .about-display-text.is-opacity,
+        .about-display-text._0 {
+            font-size: clamp(0.7rem, 2.2vw, 1.95rem) !important;
+            line-height: 2.6rem !important;
+            font-weight: 500 !important;
+            letter-spacing: 0.01em !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            text-align: center !important;
+            white-space: nowrap !important;
+            box-sizing: border-box !important;
+        }
+
+        /* Base Light Text (In Flow, Sets Container Height) */
+        .about-display-text.is-opacity {
+            position: relative !important;
+            display: block !important;
+            opacity: 0.17 !important;
+            color: #0f172a !important;
+            z-index: 1 !important;
+            width: 100% !important;
+            inset: auto !important;
+        }
+
+        /* Foreground Dark Text (Absolute Overlay for Scroll Reveal) */
+        .about-display-text._0 {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            bottom: 0 !important;
+            height: 100% !important;
+            z-index: 2 !important;
+            opacity: 1 !important;
+            color: #0f172a !important;
+            overflow: hidden !important;
+            pointer-events: none !important;
+        }
+
+        /* Tablet Adjustments (<= 991px) */
+        @media screen and (max-width: 991px) {
+
+            .about-display-text,
+            .about-display-text.is-opacity,
+            .about-display-text._0 {
+                font-size: clamp(0.6rem, 2.3vw, 1.65rem) !important;
+                line-height: 2.2rem !important;
+            }
+        }
+
+        /* Mobile Adjustments (<= 479px) */
+        @media screen and (max-width: 479px) {
+
+            .about-display-text,
+            .about-display-text.is-opacity,
+            .about-display-text._0 {
+                font-size: clamp(0.45rem, 2.35vw, 1.1rem) !important;
+                line-height: 1.6rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Sticky Emergency Banner -->
+        <style>
+            .emergency-banner {
+                display: block;
+                width: 100%;
+                background-color: var(--color-primary);
+                color: var(--color-secondary);
+                font-family: var(--font--heading-font);
+                font-size: 0.95rem;
+                font-weight: 500;
+                letter-spacing: 0.025em;
+                position: sticky;
+                top: 0;
+                z-index: 9999;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                padding: 0.75rem 0;
+                text-decoration: none;
+            }
+
+            .marquee-track {
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .marquee-inner {
+                display: inline-flex;
+                align-items: center;
+                gap: 2.5rem;
+                white-space: nowrap;
+                animation: marquee-scroll 28s linear infinite;
+                will-change: transform;
+            }
+
+            .marquee-inner:hover {
+                animation-play-state: paused;
+            }
+
+            @keyframes marquee-scroll {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+
+            .marquee-item {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                flex-shrink: 0;
+                color: var(--color-secondary);
+            }
+
+            .marquee-item a {
+                color: var(--color-secondary);
+                text-decoration: none;
+            }
+
+            .marquee-divider {
+                color: var(--color-secondary);
+                opacity: 0.45;
+                font-size: 0.8rem;
+                flex-shrink: 0;
+            }
+
+            .emergency-icon-pulse {
+                display: inline-block;
+                animation: pulse-ring 1.5s infinite;
+            }
+
+            @keyframes pulse-ring {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.25);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            @media screen and (max-width: 479px) {
+                .emergency-banner {
+                    font-size: 0.8rem;
+                }
+
+                .marquee-inner {
+                    animation-duration: 20s;
+                    gap: 1.75rem;
+                }
+            }
+        </style>
+
+        <div class="emergency-banner">
+            <div class="marquee-track">
+                <div class="marquee-inner">
+                    <!-- Set 1 -->
+                    <span class="marquee-item">
+
+                        <strong>Southeast Electric & Plumbing</strong> — Call Now: 334-222-1799
+                    </span>
+                    <span class="marquee-divider">✦</span>
+                    <span class="marquee-item">
+
+                        <strong>Electrical & Plumbing Supply Store</strong> — Serving Andalusia, AL
+                    </span>
+                    <span class="marquee-divider">✦</span>
+                    <span class="marquee-item">
+
+                        <strong>Quality Supplies & Fast Service</strong> — Visit Us in Andalusia Today!
+                    </span>
+                    <span class="marquee-divider">✦</span>
+                    <!-- Set 2 (duplicate for seamless loop) -->
+                    <span class="marquee-item">
+
+                        <strong>Southeast Electric & Plumbing</strong> — Call Now: 334-222-1799
+                    </span>
+                    <span class="marquee-divider">✦</span>
+                    <span class="marquee-item">
+
+                        <strong>Electrical & Plumbing Supply Store</strong> — Serving Andalusia, AL
+                    </span>
+                    <span class="marquee-divider">✦</span>
+                    <span class="marquee-item">
+
+                        <strong>Quality Supplies & Fast Service</strong> — Visit Us in Andalusia Today!
+                    </span>
+                    <span class="marquee-divider">✦</span>
+                </div>
+            </div>
+        </div>
+
+        <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
+            role="banner" class="navbar w-nav">
+            <div class="nav-container"><a href="#" aria-current="page"
+                    class="nav-brand-logo-wrapper w-nav-brand w--current"><img src="assets/icons/nav-logo.svg"
+                        loading="lazy" alt="Nav Logo" class="nav-brand-logo" /></a>
+                <nav role="navigation" class="nav-menu w-nav-menu"><a href="#" aria-current="page"
+                        class="nav-link w-nav-link w--current">Home</a><a href="#"
+                        class="nav-link w-nav-link">About</a><a href="#" class="nav-link w-nav-link">Service</a>
+                    <a href="#" class="nav-link w-nav-link">Package </a><a href="#" class="nav-link w-nav-link">Team</a>
+                    <div class="nav-button hide-desktop"><a href="#" class="button is-nav w-inline-block">
+                            <div>Contact us</div>
+                        </a></div>
+                </nav>
+
+                <div class="nav-button hide-mobile-landscape"><a href="#" class="button is-nav w-inline-block">
+                        <div>Contact us</div>
+                    </a></div>
+                <div data-w-id="9aad3a2d-33ab-b3cc-d0f9-e65458a9271e" class="nav-menu-button w-nav-button">
+                    <div class="nav-menu-line-wrapper">
+                        <div class="nav-menu-line top"></div>
+                        <div class="nav-menu-line middle"></div>
+                        <div class="nav-menu-line last"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="man-wrapper">
+        <div class="section-header hero">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div data-w-id="639a0781-6b49-dcb8-b493-899ce6aeef8b" class="header-component">
+                        <div style="opacity:0;-webkit-transform:translate3d(0, -80px, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -80px, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -80px, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -80px, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="header-top-content">
+                            <div class="header-hedline">
+                                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                                    class="gmb-hero-badge" title="View our Google Business Profile">
+                                    <span class="gmb-logo-box">
+                                        <svg width="18" height="18" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                                fill="#4285F4" />
+                                            <path
+                                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                                fill="#34A853" />
+                                            <path
+                                                d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.62z"
+                                                fill="#FBBC05" />
+                                            <path
+                                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"
+                                                fill="#EA4335" />
+                                        </svg>
+                                    </span>
+                                    <span class="gmb-rating-val">4.9</span>
+                                    <span class="gmb-stars-row">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFC107">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFC107">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFC107">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFC107">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFC107">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                    </span>
+                                    <span class="gmb-text-label">150+ Google Reviews</span>
+                                </a>
+                            </div>
+                            <div class="padding-bottom padding-small"></div>
+                            <h1 class="heading-style-h1 light">Your Trusted Andalusia Electrical & Plumbing Supplier</h1>
+                            <div class="padding-bottom padding-medium"></div>
+                            <div class="header-buttom-wrapper">
+                                <a href="#" class="button hover-color-brand-color w-inline-block">
+                                    <div>Order services</div>
+                                </a>
+                                <a href="#" class="button is-secondary is-home w-inline-block">
+                                    <div>More about us</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Instant Quote Form Style & Container -->
+                        <style>
+                            .instant-quote-card {
+                                max-width: 100%;
+                                width: 100%;
+                                margin: 2rem auto;
+                                padding: 2.5rem;
+                                box-sizing: border-box;
+                                background-color: var(--neutral--white-200);
+                                border-radius: 0.75rem;
+                            }
+
+                            .instant-quote-form {
+                                width: 100%;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                grid-column-gap: 1.5rem;
+                                grid-row-gap: 1.5rem;
+                            }
+
+                            .label-spacer {
+                                display: block;
+                            }
+
+                            @media screen and (max-width: 991px) {
+                                .instant-quote-form {
+                                    grid-template-columns: 1fr 1fr;
+                                }
+                            }
+
+                            @media screen and (max-width: 767px) {
+                                .instant-quote-card {
+                                    padding: 1.5rem;
+                                }
+
+                                .instant-quote-form {
+                                    grid-template-columns: 1fr;
+                                    grid-row-gap: 1.25rem;
+                                }
+
+                                .label-spacer {
+                                    display: none;
+                                }
+                            }
+                        </style>
+
+                        <div class="instant-quote-card w-form">
+                            <h3 class="heading-style-h3 dark" style="margin-bottom: 0.25rem; text-align: center;">
+                                Request an Instant Quote</h3>
+                            <p class="dark"
+                                style="margin-bottom: 2rem; font-size: 0.95rem; opacity: 0.8; font-family: var(--font--paragraph-font); text-align: center;">
+                                Get a response within 30 minutes</p>
+
+                            <form class="instant-quote-form" id="instant-quote-form" name="instant-quote-form"
+                                data-name="Instant Quote Form" method="post">
+                                <!-- Name Field -->
+                                <div class="contact-field-wrapper">
+                                    <label class="checkout-field-label dark" for="quote-name">Full Name</label>
+                                    <input class="contact-input w-input" type="text" id="quote-name" name="name"
+                                        placeholder="John Doe" required style="width: 100%;" />
+                                </div>
+
+                                <!-- Phone Field -->
+                                <div class="contact-field-wrapper">
+                                    <label class="checkout-field-label dark" for="quote-phone">Phone Number</label>
+                                    <input class="contact-input w-input" type="tel" id="quote-phone" name="phone"
+                                        placeholder="(123) 456-7890" required style="width: 100%;" />
+                                </div>
+
+                                <!-- Address Field -->
+                                <div class="contact-field-wrapper">
+                                    <label class="checkout-field-label dark" for="quote-address">Service Address</label>
+                                    <input class="contact-input w-input" type="text" id="quote-address" name="address"
+                                        placeholder="123 Main St, City, State" required style="width: 100%;" />
+                                </div>
+
+                                <!-- Issue Type -->
+                                <div class="contact-field-wrapper">
+                                    <label class="checkout-field-label dark" for="quote-issue">Issue Type</label>
+                                    <select class="contact-input w-select" id="quote-issue" name="issue" required
+                                        style="width: 100%; padding-top: 0.5rem; padding-bottom: 0.5rem;">
+                                        <option value="" disabled selected>Select issue type</option>
+                                        <option value="leak">Leak Repair</option>
+                                        <option value="clog">Clog/Drain Cleaning</option>
+                                        <option value="installation">Plumbing Installation</option>
+                                        <option value="emergency">Emergency Service</option>
+                                    </select>
+                                </div>
+
+                                <!-- Preferred Time -->
+                                <div class="contact-field-wrapper">
+                                    <label class="checkout-field-label dark" for="quote-time">Preferred Time</label>
+                                    <input class="contact-input w-input" type="text" id="quote-time" name="time"
+                                        placeholder="e.g. As soon as possible, or 2:00 PM" required
+                                        style="width: 100%;" />
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="contact-field-wrapper"
+                                    style="justify-content: flex-end; align-items: stretch;">
+                                    <label class="checkout-field-label dark label-spacer"
+                                        style="visibility: hidden; margin-bottom: 0;">Spacer</label>
+                                    <button type="submit" class="button hover-color-brand-color w-button"
+                                        style="width: 100%; height: 2.75rem; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0;">
+                                        Get My Instant Quote
+                                    </button>
+                                </div>
+                            </form>
+
+                            <!-- Success Message -->
+                            <div class="w-form-done"
+                                style="display: none; padding: 2rem; background-color: #e6f9ff; border: 1px solid var(--color-primary); border-radius: .75rem; text-align: center;">
+                                <h4 class="heading-style-h4 dark"
+                                    style="color: var(--color-secondary); margin-bottom: 0.5rem;">Quote Request
+                                    Received!</h4>
+                                <p class="dark" style="margin-bottom: 0;">Thank you! We will call or text you at your
+                                    preferred time (within 30 minutes).</p>
+                            </div>
+                        </div>
+                        <div class="header-bottom-content">
+                            <div class="header-tracker-wrapper">
+                                <div class="header-tracker-item">
+                                    <div class="header-tracker">
+                                        <div class="header-image-wrapper"><img src="assets/images/hero-image-3.webp"
+                                                loading="lazy" sizes="(max-width: 1158px) 100vw, 1158px, 100vw" alt=""
+                                                class="header-image" /></div>
+                                        <div class="header-card">
+                                            <div class="header-card-content">
+                                                <h2 class="heading-style-h2">5.0</h2>
+                                                <h5 class="heading-style-h5">Top Rated Customer Satisfaction Rating on Google Reviews</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-tracker">
+                                        <div class="header-image-wrapper"><img src="assets/images/hero-image-2.webp"
+                                                loading="lazy" sizes="(max-width: 1158px) 100vw, 1158px" alt=""
+                                                class="header-image" /></div>
+                                        <div class="header-card">
+                                            <div class="header-card-content">
+                                                <h2 class="heading-style-h2">100%</h2>
+                                                <h5 class="heading-style-h5">Quality Electrical and Plumbing Supplies in Stock</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-tracker">
+                                        <div class="header-image-wrapper"><img src="assets/images/hero-image-1.webp"
+                                                loading="lazy" sizes="(max-width: 1158px) 100vw, 1158px, 100vw" alt=""
+                                                class="header-image" /></div>
+                                        <div class="header-card">
+                                            <div class="header-card-content">
+                                                <h2 class="heading-style-h2">1</h2>
+                                                <h5 class="heading-style-h5">Reliable Supply Store Serving DIY and Contractors</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-tracker-item">
+                                    <div class="header-tracker">
+                                        <div class="header-image-wrapper"><img src="assets/images/hero-image-3.webp"
+                                                loading="lazy" sizes="(max-width: 1158px) 100vw, 1158px, 100vw" alt=""
+                                                class="header-image" /></div>
+                                        <div class="header-card">
+                                            <div class="header-card-content">
+                                                <h2 class="heading-style-h2">5.0</h2>
+                                                <h5 class="heading-style-h5">Top Rated Customer Satisfaction Rating on Google Reviews</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-tracker">
+                                        <div class="header-image-wrapper"><img src="assets/images/hero-image-2.webp"
+                                                loading="lazy" sizes="(max-width: 1158px) 100vw, 1158px" alt=""
+                                                class="header-image" /></div>
+                                        <div class="header-card">
+                                            <div class="header-card-content">
+                                                <h2 class="heading-style-h2">100%</h2>
+                                                <h5 class="heading-style-h5">Quality Electrical and Plumbing Supplies in Stock</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-tracker">
+                                        <div class="header-image-wrapper"><img src="assets/images/hero-image-1.webp"
+                                                loading="lazy" sizes="(max-width: 1158px) 100vw, 1158px, 100vw" alt=""
+                                                class="header-image" /></div>
+                                        <div class="header-card">
+                                            <div class="header-card-content">
+                                                <h2 class="heading-style-h2">1</h2>
+                                                <h5 class="heading-style-h5">Reliable Supply Store Serving DIY and Contractors</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-tracker-item">
+                                    <div class="header-tracker">
+                                        <div class="header-image-wrapper"><img src="assets/images/hero-image-3.webp"
+                                                loading="lazy" sizes="(max-width: 1158px) 100vw, 1158px, 100vw" alt=""
+                                                class="header-image" /></div>
+                                        <div class="header-card">
+                                            <div class="header-card-content">
+                                                <h2 class="heading-style-h2">5.0</h2>
+                                                <h5 class="heading-style-h5">Top Rated Customer Satisfaction Rating on Google Reviews</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-tracker">
+                                        <div class="header-image-wrapper"><img src="assets/images/hero-image-2.webp"
+                                                loading="lazy" sizes="(max-width: 1158px) 100vw, 1158px" alt=""
+                                                class="header-image" /></div>
+                                        <div class="header-card">
+                                            <div class="header-card-content">
+                                                <h2 class="heading-style-h2">100%</h2>
+                                                <h5 class="heading-style-h5">Quality Electrical and Plumbing Supplies in Stock</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-tracker">
+                                        <div class="header-image-wrapper"><img src="assets/images/hero-image-1.webp"
+                                                loading="lazy" sizes="(max-width: 1158px) 100vw, 1158px, 100vw" alt=""
+                                                class="header-image" /></div>
+                                        <div class="header-card">
+                                            <div class="header-card-content">
+                                                <h2 class="heading-style-h2">1</h2>
+                                                <h5 class="heading-style-h5">Reliable Supply Store Serving DIY and Contractors</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-w-id="52dd1769-6824-b91b-ef72-e62d5fb20b9c" class="section-about">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="padding-section-large padding-bottom-medium">
+                        <div class="about-component">
+                            <div class="about-display-overflow">
+                                <p class="about-display-text is-opacity">Southeast Electric &amp; Plumbing is your trusted local distributor.</p>
+                                <p data-w-id="3ee26237-a2cb-86d5-af11-f8ec7f3839e6" class="about-display-text _0">Southeast Electric &amp; Plumbing is your trusted local distributor.</p>
+                            </div>
+                            <div class="about-display-overflow">
+                                <p class="about-display-text is-opacity">Located in Andalusia, Alabama, we specialize in quality products</p>
+                                <p data-w-id="a31460fd-3b7a-4621-fcf7-d94e1d86015d" class="about-display-text _0">Located in Andalusia, Alabama, we specialize in quality products</p>
+                            </div>
+                            <div class="about-display-overflow">
+                                <p class="about-display-text is-opacity">and essential supplies for homeowners and professional contractors alike.</p>
+                                <p data-w-id="f1696a8b-df91-92e5-0bfc-9526f6f72ee9" class="about-display-text _0">and essential supplies for homeowners and professional contractors alike.</p>
+                            </div>
+                            <div class="about-display-overflow _03">
+                                <p class="about-display-text is-opacity">From wires and cables to plumbing tools and fixtures,</p>
+                                <p data-w-id="3b07d2a0-6796-e0bf-9d93-d31d429eaa01" class="about-display-text _0">From wires and cables to plumbing tools and fixtures,</p>
+                            </div>
+                            <div class="about-display-overflow _02">
+                                <p class="about-display-text is-opacity">we deliver dependable products for all your project needs</p>
+                                <p data-w-id="600a4620-2db1-9845-9e49-8de69ccbe40d" class="about-display-text _0">we deliver dependable products for all your project needs</p>
+                            </div>
+                            <div class="about-display-overflow _04">
+                                <p class="about-display-text is-opacity">with dedicated service and care.</p>
+                                <p data-w-id="1fe4860e-a626-949c-f3f2-2f49d3b007b3" class="about-display-text _0">with dedicated service and care.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-brand">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="padding-section-medium">
+                        <div class="brand-component">
+                            <div class="brand-tracker">
+                                <div class="brand-logo-wrapper"><img src="assets/icons/brand-logo-6.svg" loading="lazy"
+                                        alt="" class="brand-logo" /><img src="assets/icons/brand-logo-5.svg"
+                                        loading="lazy" alt="" class="brand-logo" /><img
+                                        src="assets/icons/brand-logo-4.svg" loading="lazy" alt=""
+                                        class="brand-logo" /><img src="assets/icons/brand-logo-3.svg" loading="lazy"
+                                        alt="" class="brand-logo" /><img src="assets/icons/brand-logo-2.svg"
+                                        loading="lazy" alt="" class="brand-logo" /><img
+                                        src="assets/icons/brand-logo-1.svg" loading="lazy" alt="" class="brand-logo" />
+                                </div>
+                                <div class="brand-logo-wrapper"><img src="assets/icons/brand-logo-6.svg" loading="lazy"
+                                        alt="" class="brand-logo" /><img src="assets/icons/brand-logo-5.svg"
+                                        loading="lazy" alt="" class="brand-logo" /><img
+                                        src="assets/icons/brand-logo-4.svg" loading="lazy" alt=""
+                                        class="brand-logo" /><img src="assets/icons/brand-logo-3.svg" loading="lazy"
+                                        alt="" class="brand-logo" /><img src="assets/icons/brand-logo-2.svg"
+                                        loading="lazy" alt="" class="brand-logo" /><img
+                                        src="assets/icons/brand-logo-1.svg" loading="lazy" alt="" class="brand-logo" />
+                                </div>
+                                <div class="brand-logo-wrapper"><img src="assets/icons/brand-logo-6.svg" loading="lazy"
+                                        alt="" class="brand-logo" /><img src="assets/icons/brand-logo-5.svg"
+                                        loading="lazy" alt="" class="brand-logo" /><img
+                                        src="assets/icons/brand-logo-4.svg" loading="lazy" alt=""
+                                        class="brand-logo" /><img src="assets/icons/brand-logo-3.svg" loading="lazy"
+                                        alt="" class="brand-logo" /><img src="assets/icons/brand-logo-2.svg"
+                                        loading="lazy" alt="" class="brand-logo" /><img
+                                        src="assets/icons/brand-logo-1.svg" loading="lazy" alt="" class="brand-logo" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Tracker Section (Editorial Light Layout) -->
+        <div class="section-stats-tracker"
+            style="background-color: var(--color-light); border-bottom: 1px solid rgba(14, 14, 14, 0.05);">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="padding-section-large" style="padding-top: 5rem; padding-bottom: 5rem;">
+                        <!-- Stats Tracker Custom Styles -->
+                        <style>
+                            .tracker-title {
+                                font-family: var(--font--heading-font);
+                                font-size: 1.8rem;
+                                font-weight: 700;
+                                color: var(--color-secondary);
+                                margin-bottom: 3.5rem;
+                                letter-spacing: -0.01em;
+                            }
+
+                            .tracker-grid {
+                                display: grid;
+                                grid-template-columns: repeat(4, 1fr);
+                                grid-column-gap: 0;
+                                grid-row-gap: 2.5rem;
+                            }
+
+                            .tracker-item {
+                                padding-left: 2rem;
+                                border-left: 1px solid rgba(14, 14, 14, 0.15);
+                                display: flex;
+                                flex-direction: column;
+                                gap: 0.75rem;
+                                justify-content: flex-start;
+                            }
+
+                            .tracker-item:first-child {
+                                border-left: none;
+                                padding-left: 0;
+                            }
+
+                            .tracker-label {
+                                font-family: var(--font--paragraph-font);
+                                font-size: 0.75rem;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                letter-spacing: 0.05em;
+                                color: var(--color-secondary);
+                                opacity: 0.6;
+                            }
+
+                            .tracker-number {
+                                font-family: var(--font--heading-font);
+                                font-size: 4.5rem;
+                                font-weight: 700;
+                                line-height: 1;
+                                color: var(--color-secondary);
+                                /* Dark blue numbers */
+                                letter-spacing: -0.02em;
+                            }
+
+                            /* Tablet & Mobile Responsiveness - Center Aligned (No Boxes) */
+                            @media screen and (max-width: 991px) {
+                                .tracker-title {
+                                    font-size: 1.6rem;
+                                    text-align: center;
+                                    margin-bottom: 2.5rem;
+                                }
+
+                                .tracker-grid {
+                                    grid-template-columns: repeat(2, 1fr);
+                                    grid-row-gap: 2.5rem;
+                                    grid-column-gap: 1.5rem;
+                                }
+
+                                .tracker-item {
+                                    border-left: none !important;
+                                    padding: 0 !important;
+                                    background: transparent !important;
+                                    border: none !important;
+                                    box-shadow: none !important;
+                                    border-radius: 0 !important;
+                                    align-items: center !important;
+                                    text-align: center !important;
+                                    gap: 0.5rem;
+                                }
+
+                                .tracker-number {
+                                    font-size: 3.2rem;
+                                    text-align: center !important;
+                                }
+
+                                .tracker-label {
+                                    text-align: center !important;
+                                }
+                            }
+
+                            @media screen and (max-width: 479px) {
+                                .section-stats-tracker .padding-section-large {
+                                    padding-top: 3.5rem !important;
+                                    padding-bottom: 3.5rem !important;
+                                }
+
+                                .tracker-title {
+                                    font-size: 1.35rem;
+                                    margin-bottom: 2rem;
+                                }
+
+                                .tracker-grid {
+                                    grid-template-columns: repeat(2, 1fr);
+                                    grid-row-gap: 2rem;
+                                    grid-column-gap: 1.25rem;
+                                }
+
+                                .tracker-label {
+                                    font-size: 0.7rem;
+                                    letter-spacing: 0.04em;
+                                    text-align: center !important;
+                                }
+
+                                .tracker-number {
+                                    font-size: 2.5rem;
+                                    text-align: center !important;
+                                }
+                            }
+                        </style>
+
+                        <h3 class="tracker-title">Serving Andalusia with quality supplies...</h3>
+
+                        <div class="tracker-grid">
+                            <!-- Stat 1 -->
+                            <div class="tracker-item">
+                                <span class="tracker-label">Years Experience</span>
+                                <div class="tracker-number" data-target="20+">20+</div>
+                            </div>
+                            <!-- Stat 2 -->
+                            <div class="tracker-item">
+                                <span class="tracker-label">Jobs Completed</span>
+                                <div class="tracker-number" data-target="15K+">15K+</div>
+                            </div>
+                            <!-- Stat 3 -->
+                            <div class="tracker-item">
+                                <span class="tracker-label">Emergency Dispatch</span>
+                                <div class="tracker-number" data-target="24/7">24/7</div>
+                            </div>
+                            <!-- Stat 4 -->
+                            <div class="tracker-item">
+                                <span class="tracker-label">Satisfaction Rate</span>
+                                <div class="tracker-number" data-target="100%">100%</div>
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Counter Animation Script -->
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                const trackerNumbers = document.querySelectorAll(".tracker-number");
+                                if (!trackerNumbers.length) return;
+
+                                const animateCounter = (el) => {
+                                    const targetText = el.getAttribute("data-target") || el.innerText.trim();
+                                    let targetNum = 0;
+                                    let prefix = "";
+                                    let suffix = "";
+
+                                    if (targetText.includes("K+")) {
+                                        targetNum = parseInt(targetText.replace(/[^\d]/g, ""), 10);
+                                        suffix = "K+";
+                                    } else if (targetText.includes("+")) {
+                                        targetNum = parseInt(targetText.replace(/[^\d]/g, ""), 10);
+                                        suffix = "+";
+                                    } else if (targetText.includes("%")) {
+                                        targetNum = parseInt(targetText.replace(/[^\d]/g, ""), 10);
+                                        suffix = "%";
+                                    } else if (targetText.includes("/7")) {
+                                        targetNum = parseInt(targetText.split("/")[0], 10);
+                                        suffix = "/7";
+                                    } else {
+                                        targetNum = parseInt(targetText.replace(/[^\d]/g, ""), 10) || 0;
+                                        suffix = targetText.replace(/[\d]/g, "");
+                                    }
+
+                                    const duration = 2000; // 2 seconds animation duration
+                                    const startTime = performance.now();
+
+                                    const updateCount = (currentTime) => {
+                                        const elapsedTime = currentTime - startTime;
+                                        const progress = Math.min(elapsedTime / duration, 1);
+                                        const easeProgress = 1 - Math.pow(1 - progress, 3); // Ease-out cubic curve
+                                        const currentNum = Math.floor(easeProgress * targetNum);
+
+                                        el.innerText = prefix + currentNum + suffix;
+
+                                        if (progress < 1) {
+                                            requestAnimationFrame(updateCount);
+                                        } else {
+                                            el.innerText = prefix + targetNum + suffix;
+                                        }
+                                    };
+
+                                    requestAnimationFrame(updateCount);
+                                };
+
+                                const observerOptions = { threshold: 0.2 };
+                                const observer = new IntersectionObserver((entries, obs) => {
+                                    entries.forEach(entry => {
+                                        if (entry.isIntersecting) {
+                                            animateCounter(entry.target);
+                                            obs.unobserve(entry.target);
+                                        }
+                                    });
+                                }, observerOptions);
+
+                                trackerNumbers.forEach(numEl => {
+                                    if (!numEl.getAttribute("data-target")) {
+                                        numEl.setAttribute("data-target", numEl.innerText.trim());
+                                    }
+                                    const initialText = numEl.getAttribute("data-target");
+                                    if (initialText.includes("K+")) numEl.innerText = "0K+";
+                                    else if (initialText.includes("+")) numEl.innerText = "0+";
+                                    else if (initialText.includes("%")) numEl.innerText = "0%";
+                                    else if (initialText.includes("/7")) numEl.innerText = "0/7";
+                                    else numEl.innerText = "0";
+
+                                    observer.observe(numEl);
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Badges Section (4 Authentic Official Plumbing Accreditation Badges Only) -->
+        <div class="section-trust-badges"
+            style="background-color: var(--color-white); border-bottom: 1px solid rgba(14, 14, 14, 0.05);">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="padding-section-small" style="padding-top: 3rem; padding-bottom: 3rem;">
+                        <style>
+                            .trust-badges-row {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 3.5rem;
+                                flex-wrap: wrap;
+                            }
+
+                            .trust-badge-img {
+                                height: 125px;
+                                width: auto;
+                                max-width: 220px;
+                                object-fit: contain;
+                                filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.07));
+                                transition: transform 0.3s ease, filter 0.3s ease;
+                            }
+
+                            .trust-badge-img:hover {
+                                transform: scale(1.08);
+                                filter: drop-shadow(0 8px 22px rgba(0, 0, 0, 0.15));
+                            }
+
+                            @media screen and (max-width: 991px) {
+                                .trust-badges-row {
+                                    gap: 2.5rem;
+                                }
+
+                                .trust-badge-img {
+                                    height: 95px;
+                                    max-width: 170px;
+                                }
+                            }
+
+                            @media screen and (max-width: 767px) {
+                                .trust-badges-row {
+                                    display: grid;
+                                    grid-template-columns: repeat(2, 1fr);
+                                    justify-items: center;
+                                    align-items: center;
+                                    gap: 1.75rem 1rem;
+                                }
+
+                                .trust-badge-img {
+                                    height: 80px;
+                                    max-width: 140px;
+                                }
+                            }
+
+                            @media screen and (max-width: 479px) {
+                                .trust-badges-row {
+                                    gap: 1.25rem 1rem;
+                                }
+
+                                .trust-badge-img {
+                                    height: 68px;
+                                    max-width: 115px;
+                                }
+                            }
+                        </style>
+                        <div class="trust-badges-row">
+                            <img src="assets/icons/badge-oapi.png" alt="Ohio Association of Plumbing Inspectors Seal"
+                                class="trust-badge-img" />
+                            <img src="assets/icons/badge-phcc.png" alt="PHCC Plumbing Heating Cooling Contractors Seal"
+                                class="trust-badge-img" />
+                            <img src="assets/icons/iapmo.png" alt="IAPMO UPC Uniform Plumbing Code Certified"
+                                class="trust-badge-img" />
+                            <img src="assets/icons/upc.png" alt="State Licensed Master Plumber Government Seal"
+                                class="trust-badge-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-service">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="padding-section-large">
+                        <div class="value-component">
+                            <div class="value-top-content">
+                                <h2 class="heading-style-h2">Our Comprehensive Plumbing Services</h2>
+                                <div class="text-size-regular">Providing quality electrical and plumbing supplies, tools, and fixtures for Andalusia homeowners and contractors.</div>
+                            </div>
+                            <div class="padding-bottom padding-large"></div>
+                            <div class="service-collection-list-wrapper w-dyn-list">
+                                <div role="list" class="service-collection-list w-dyn-items">
+                                    <div role="listitem" class="service-collection-item w-dyn-item">
+                                        <a href="#" class="service-card w-inline-block">
+                                            <h5 class="heading-style-h5">Plumbing Supply Distribution</h5>
+                                            <div class="service-icon-wrapper"><img src="assets/icons/service-icon-6.svg"
+                                                    loading="lazy" alt="" class="service-icon" /></div>
+                                            <div class="service-card-content">
+                                                <div class="text-size-regular dark">View services</div><img
+                                                    src="assets/icons/package-arrow.svg" loading="lazy" alt=""
+                                                    class="service-arrow" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div role="listitem" class="service-collection-item w-dyn-item">
+                                        <a href="#" class="service-card w-inline-block">
+                                            <h5 class="heading-style-h5">Electrical Wire Supplies</h5>
+                                            <div class="service-icon-wrapper"><img src="assets/icons/service-icon-5.svg"
+                                                    loading="lazy" alt="" class="service-icon" /></div>
+                                            <div class="service-card-content">
+                                                <div class="text-size-regular dark">View services</div><img
+                                                    src="assets/icons/package-arrow.svg" loading="lazy" alt=""
+                                                    class="service-arrow" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div role="listitem" class="service-collection-item w-dyn-item">
+                                        <a href="#" class="service-card w-inline-block">
+                                            <h5 class="heading-style-h5">Tools And Hardware</h5>
+                                            <div class="service-icon-wrapper"><img src="assets/icons/service-icon-4.svg"
+                                                    loading="lazy" alt="" class="service-icon" /></div>
+                                            <div class="service-card-content">
+                                                <div class="text-size-regular dark">View services</div><img
+                                                    src="assets/icons/package-arrow.svg" loading="lazy" alt=""
+                                                    class="service-arrow" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-process">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="padding-section-large padding-bottom-medium">
+                        <div class="process-component">
+                            <div class="process-left-content">
+                                <h2 class="heading-style-h2">Simple supply ordering process for efficient project delivery.</h2>
+                                <div class="text-size-regular">Browse our extensive inventory of plumbing and electrical supplies or contact our team directly in Andalusia.</div>
+                            </div>
+                            <div class="process-right-content">
+                                <div class="process-card">
+                                    <div class="process-icon-wrapper">
+                                        <h6 class="heading-style-h6">01</h6>
+                                    </div>
+                                    <div class="process-content">
+                                        <h5 class="heading-style-h5">Inquire Supplies</h5>
+                                        <div>Reach out by phone or visit our Andalusia location to specify the electrical and plumbing products needed for your installation.</div>
+                                    </div>
+                                </div>
+                                <div class="process-card">
+                                    <div class="process-icon-wrapper">
+                                        <h6 class="heading-style-h6">02</h6>
+                                    </div>
+                                    <div class="process-content">
+                                        <h5 class="heading-style-h5">Inventory Check</h5>
+                                        <div>Our team confirms product availability, matching exact specifications for wires, cables, lighting fixtures, tools, and plumbing supplies.</div>
+                                    </div>
+                                </div>
+                                <div class="process-card">
+                                    <div class="process-icon-wrapper">
+                                        <h6 class="heading-style-h6">03</h6>
+                                    </div>
+                                    <div class="process-content">
+                                        <h5 class="heading-style-h5">Fulfill Order</h5>
+                                        <div>Pick up your supplies directly or arrange local distribution to keep your residential or commercial project running smoothly.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-cta padding-top-medium">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="cta-component">
+                        <div class="cta-content-wrapper">
+                            <div class="cta-content">
+                                <h2 class="heading-style-h2 light">Contact us today for your plumbing needs and
+                                    solutions</h2>
+                                <div class="text-size-regular light">Faucibus eget etiam tellus metus. Tellus auctor
+                                    congue consectetur praesent est duis.</div>
+                            </div>
+                            <div class="cta-button-wrapper">
+                                <a href="#" class="button hover-color-brand-color w-inline-block">
+                                    <div>Get in touch</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cta-image-wrapper"><img sizes="100vw" alt="" src="assets/images/CTA-Image.webp"
+                                loading="lazy" class="cta-image" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-testimonial">
+            <style>
+                @media screen and (max-width: 767px) {
+                    .testimonial-top-content {
+                        width: 100%;
+                    }
+
+                    .testimonial-card {
+                        width: 85vw !important;
+                        max-width: 310px !important;
+                        flex: 0 0 auto !important;
+                        box-sizing: border-box !important;
+                        align-items: flex-start !important;
+                        text-align: left !important;
+                        padding: 1.25rem !important;
+                    }
+
+                    .testimonial-card .text-size-regular.dark {
+                        white-space: normal !important;
+                        word-break: break-word !important;
+                        width: 100% !important;
+                        text-align: left !important;
+                    }
+
+                    .testimonial-top-content-wrapper {
+                        flex-direction: column !important;
+                        align-items: flex-start !important;
+                        justify-content: flex-start !important;
+                        width: 100% !important;
+                        gap: 0.5rem !important;
+                    }
+
+                    .testimonial-top-left-content {
+                        justify-content: flex-start !important;
+                        align-items: center !important;
+                        width: 100% !important;
+                        gap: 0.75rem !important;
+                        text-align: left !important;
+                    }
+
+                    .testimonial-top-right-content {
+                        justify-content: flex-start !important;
+                        align-items: center !important;
+                        width: 100% !important;
+                        gap: 0.5rem !important;
+                        text-align: left !important;
+                    }
+
+                    .testimonial-image {
+                        margin: 0 !important;
+                        flex-shrink: 0 !important;
+                    }
+
+                    .testimonial-category {
+                        align-self: flex-start !important;
+                    }
+                }
+            </style>
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="padding-section-large">
+                        <div class="testimonial-component">
+                            <div class="testimonial-top-content">
+                                <h2 class="heading-style-h2">See what our satisfied customers are saying about us</h2>
+                                <div class="text-size-regular">Customer feedback for Southeast Electric & Plumbing supplies and distribution in Andalusia.</div>
+                            </div>
+                            <div class="padding-bottom padding-large"></div>
+                            <div class="testimonial-bottom-wrapper">
+                                <div class="testimonial-tracker-wrapper">
+                                    <div class="testimonial-tracker _01">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-6.webp" loading="lazy"
+                                                        alt="Emily Rodriguez" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Emily Rodriguez</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Southeast Electric & Plumbing provided great customer service when I needed electrical supplies in Andalusia. Their staff was knowledgeable and helped me quickly."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Electrical Supplies</div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-1.webp" loading="lazy"
+                                                        alt="Karen S" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Karen S</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Found all the plumbing supplies and fixtures I needed at Southeast Electric & Plumbing. Helpful team and convenient location in Andalusia."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Plumbing Supplies</div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-3.webp" loading="lazy"
+                                                        alt="David M" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">David M</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Southeast Electric & Plumbing is a reliable local supplier for wires and electrical components. Very satisfied with their store service."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Wiring Supplies</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-tracker _01">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-4.webp" loading="lazy"
+                                                        alt="Mike R" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Mike R</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Excellent inventory of tools and plumbing parts at Southeast Electric & Plumbing. The staff was friendly and assisted me immediately."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Hardware Supplies</div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-2.webp" loading="lazy"
+                                                        alt="John Thompson" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">John Thompson</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Southeast Electric & Plumbing had the exact cables and electrical supplies I required. Great local business serving Andalusia customers."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Cable Supplies</div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-5.webp" loading="lazy"
+                                                        alt="Sarah Johnson" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Sarah Johnson</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Quick and efficient service at Southeast Electric & Plumbing. They carry a solid selection of lighting fixtures and plumbing items."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Fixture Supplies</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-tracker _01">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-1.webp" loading="lazy"
+                                                        alt="Robert B" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Robert B</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"As a local contractor, I rely on Southeast Electric & Plumbing for quality electrical and plumbing materials. Always dependable service."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Contractor Supplies</div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-3.webp" loading="lazy"
+                                                        alt="Amanda K" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Amanda K</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Southeast Electric & Plumbing made finding replacement lighting fixtures easy. Knowledgeable staff and great product selection in Andalusia."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Lighting Supplies</div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-6.webp" loading="lazy"
+                                                        alt="Jason P" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Jason P</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Great experience buying tools at Southeast Electric & Plumbing. Friendly staff and good prices on quality products."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Tool Distribution</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-tracker-wrapper _02">
+                                    <div class="testimonial-tracker _02">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-5.webp" loading="lazy"
+                                                        alt="Lisa W" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Lisa W</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Southeast Electric & Plumbing had everything I needed for my home plumbing repair project. Highly recommended local store."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Repair Supplies</div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-3.webp" loading="lazy"
+                                                        alt="Daniel C" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Daniel C</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Southeast Electric & Plumbing consistently provides top notch service and supplies for our commercial electrical jobs."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Commercial Supplies</div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-1.webp" loading="lazy"
+                                                        alt="Jessica H" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Jessica H</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Very helpful employees at Southeast Electric & Plumbing. They helped me select the right plumbing fittings right away."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Plumbing Hardware</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-tracker _02">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-2.webp" loading="lazy"
+                                                        alt="Thomas B" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Thomas B</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Southeast Electric & Plumbing is my go to distributor in Andalusia for electrical cables and heavy duty wiring."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Cable & Wire</div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-4.webp" loading="lazy"
+                                                        alt="Rachel V" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Rachel V</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Friendly local team at Southeast Electric & Plumbing. Great selection of DIY home electrical and plumbing products."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Homeowner Supplies</div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-5.webp" loading="lazy"
+                                                        alt="Chris L" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Chris L</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Southeast Electric & Plumbing helped me locate hard to find plumbing hardware quickly. Excellent local customer support."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Emergency Hardware</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-tracker _02">
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-3.webp" loading="lazy"
+                                                        alt="Megan D" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Megan D</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Southeast Electric & Plumbing has a fantastic assortment of lighting supplies and accessories in Andalusia."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Lighting Fixtures</div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-1.webp" loading="lazy"
+                                                        alt="Brian K" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Brian K</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Reliable distributor of electrical and plumbing supplies. Southeast Electric & Plumbing always delivers quality products."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Electrical Distribution</div>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-card">
+                                            <div class="testimonial-top-content-wrapper">
+                                                <div class="testimonial-top-left-content"><img
+                                                        src="assets/images/Testimonail-Image-6.webp" loading="lazy"
+                                                        alt="Laura S" class="testimonial-image" />
+                                                    <h6 class="heading-style-h6">Laura S</h6>
+                                                </div>
+                                                <div class="testimonial-top-right-content"><img
+                                                        src="assets/icons/Star-Icon.svg" loading="lazy" alt=""
+                                                        class="testimonial-icon" />
+                                                    <div class="text-size-regular">5 Rating</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-size-regular dark">"Great customer experience at Southeast Electric & Plumbing. The staff guided me to the exact plumbing parts I needed."</div>
+                                            <div class="testimonial-category">
+                                                <div class="text-size-regular dark">Plumbing Parts</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>              </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Before/After Photos Section -->
+        <div class="section-before-after">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="padding-section-large">
+                        <!-- Before/After Bento Grid Styling -->
+                        <style>
+                            .ba-bento-grid {
+                                display: grid;
+                                grid-template-columns: repeat(3, 1fr);
+                                grid-gap: 1.5rem;
+                                grid-auto-rows: 220px;
+                            }
+
+                            .bento-card {
+                                position: relative;
+                                border-radius: 0.75rem;
+                                overflow: hidden;
+                                background-color: var(--neutral--white-200);
+                                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+                                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                            }
+
+                            .bento-card:hover {
+                                transform: translateY(-4px);
+                                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+                            }
+
+                            .bento-slider-card {
+                                grid-column: span 2;
+                                grid-row: span 2;
+                            }
+
+                            .ba-slider {
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
+                                cursor: ew-resize;
+                            }
+
+                            .ba-slider img {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: left center;
+                                pointer-events: none;
+                            }
+
+                            .ba-resize {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                width: 50%;
+                                overflow: hidden;
+                                border-right: 3px solid var(--color-white);
+                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                            }
+
+                            .ba-resize img {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                max-width: none !important;
+                                object-fit: cover;
+                                object-position: left center;
+                            }
+
+                            .ba-handle {
+                                position: absolute;
+                                top: 0;
+                                left: 50%;
+                                width: 40px;
+                                height: 40px;
+                                margin-left: -20px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                background-color: var(--color-primary);
+                                border: 3px solid var(--color-white);
+                                border-radius: 50%;
+                                z-index: 10;
+                                cursor: ew-resize;
+                                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 4px;
+                            }
+
+                            .ba-handle-arrow {
+                                width: 0;
+                                height: 0;
+                                border-top: 5px solid transparent;
+                                border-bottom: 5px solid transparent;
+                            }
+
+                            .ba-handle-arrow.left {
+                                border-right: 6px solid var(--color-secondary);
+                            }
+
+                            .ba-handle-arrow.right {
+                                border-left: 6px solid var(--color-secondary);
+                            }
+
+                            .ba-label {
+                                position: absolute;
+                                bottom: 1rem;
+                                padding: 0.35rem 0.75rem;
+                                font-family: var(--font--heading-font);
+                                font-size: 0.75rem;
+                                font-weight: bold;
+                                color: var(--color-white);
+                                background-color: rgba(14, 14, 14, 0.7);
+                                border-radius: 0.25rem;
+                                z-index: 5;
+                                pointer-events: none;
+                                text-transform: uppercase;
+                            }
+
+                            .ba-label.before {
+                                left: 1rem;
+                            }
+
+                            .ba-label.after {
+                                right: 1rem;
+                            }
+
+                            /* Bento Image Cards */
+                            .bento-image-card {
+                                grid-column: span 1;
+                                grid-row: span 1;
+                                cursor: pointer;
+                            }
+
+                            .bento-image-card img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                transition: transform 0.4s ease;
+                            }
+
+                            .bento-image-card:hover img {
+                                transform: scale(1.06);
+                            }
+
+                            .ba-gallery-overlay {
+                                position: absolute;
+                                inset: 0;
+                                background: linear-gradient(to top, rgba(14, 14, 14, 0.8) 0%, rgba(14, 14, 14, 0) 65%);
+                                display: flex;
+                                align-items: flex-end;
+                                padding: 1.25rem;
+                                opacity: 0;
+                                transition: opacity 0.3s ease;
+                            }
+
+                            .bento-image-card:hover .ba-gallery-overlay {
+                                opacity: 1;
+                            }
+
+                            .ba-gallery-title {
+                                color: var(--color-white);
+                                font-family: var(--font--heading-font);
+                                font-size: 0.85rem;
+                                font-weight: 700;
+                                letter-spacing: 0.02em;
+                            }
+
+                            /* Bento Info Card */
+                            .bento-info-card {
+                                grid-column: span 1;
+                                grid-row: span 1;
+                                background-color: var(--secondary--dark-blue);
+                                color: var(--color-white);
+                                padding: 1.75rem;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                gap: 0.75rem;
+                            }
+
+                            .bento-info-card h4 {
+                                color: var(--color-white);
+                                margin: 0;
+                            }
+
+                            .bento-info-card p {
+                                color: var(--color-white);
+                                opacity: 0.85;
+                                font-size: 0.85rem;
+                                line-height: 1.4;
+                                margin: 0;
+                            }
+
+                            @media screen and (max-width: 991px) {
+                                .ba-bento-grid {
+                                    grid-template-columns: repeat(2, 1fr);
+                                    grid-auto-rows: 200px;
+                                }
+
+                                .bento-slider-card {
+                                    grid-column: span 2;
+                                    grid-row: span 1;
+                                }
+
+                                .bento-info-card {
+                                    grid-column: span 2;
+                                }
+                            }
+
+                            @media screen and (max-width: 767px) {
+                                .ba-bento-grid {
+                                    grid-template-columns: 1fr;
+                                    grid-auto-rows: auto;
+                                }
+
+                                .bento-slider-card {
+                                    grid-column: span 1;
+                                    grid-row: span 1;
+                                    height: 240px;
+                                }
+
+                                .bento-image-card {
+                                    height: 200px;
+                                }
+
+                                .bento-info-card {
+                                    grid-column: span 1;
+                                    height: auto;
+                                    padding: 1.5rem;
+                                }
+                            }
+
+                            /* Book Page / Curtain Wipe Image Reveal Animation for Bento Cards */
+                            .bento-image-card {
+                                position: relative !important;
+                                overflow: hidden !important;
+                            }
+
+                            .bento-image-card img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                transform: scale(1.12);
+                                transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+                            }
+
+                            .bento-image-card.revealed img {
+                                transform: scale(1);
+                            }
+
+                            .bento-curtain {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: #ffffff;
+                                z-index: 4;
+                                transform: translate3d(0, 0, 0);
+                                transition: transform 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+                                pointer-events: none;
+                            }
+
+                            .bento-image-card.revealed .bento-curtain {
+                                transform: translate3d(-101%, 0, 0);
+                            }
+                        </style>
+
+                        <div class="packege-component">
+                            <!-- Top header block -->
+                            <div class="packege-top-content">
+                                <h2 class="heading-style-h2">Real Work, Real Results: Before & After Transformations
+                                </h2>
+                                <div class="text-size-regular">Drag the interactive slider to see quality electrical and plumbing products and supply solutions provided by Southeast Electric & Plumbing.</div>
+                            </div>
+                            <div class="padding-bottom padding-large"></div>
+
+                            <!-- Bento Grid -->
+                            <div class="ba-bento-grid">
+                                <!-- Hero Card: Draggable Slider -->
+                                <div class="bento-card bento-slider-card">
+                                    <div class="ba-slider">
+                                        <!-- Before Image (Base) -->
+                                        <img class="ba-img-before" src="assets/images/after.png"
+                                            alt="Old rusted plumbing before restoration" />
+
+                                        <!-- After Image (Overlay, resized via JS) -->
+                                        <div class="ba-resize">
+                                            <img class="ba-img-after" src="assets/images/before.png"
+                                                alt="Restored copper plumbing system after repair" />
+                                        </div>
+
+                                        <!-- Handle (Draggable) -->
+                                        <div class="ba-handle">
+                                            <div class="ba-handle-arrow left"></div>
+                                            <div class="ba-handle-arrow right"></div>
+                                        </div>
+
+                                        <!-- Labels -->
+                                        <div class="ba-label before">Before</div>
+                                        <div class="ba-label after">After</div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 2: Gallery Image 1 -->
+                                <div class="bento-card bento-image-card">
+                                    <div class="bento-curtain"></div>
+                                    <img src="assets/images/service-image-6.webp" alt="Drain Line Clearing"
+                                        loading="lazy" />
+                                    <div class="ba-gallery-overlay">
+                                        <div class="ba-gallery-title">Drain Line Clearing</div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3: Gallery Image 2 -->
+                                <div class="bento-card bento-image-card">
+                                    <div class="bento-curtain"></div>
+                                    <img src="assets/images/blog-image-5.webp" alt="Main Sewer Line Repair"
+                                        loading="lazy" />
+                                    <div class="ba-gallery-overlay">
+                                        <div class="ba-gallery-title">Main Sewer Line Repair</div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 4: Gallery Image 3 -->
+                                <div class="bento-card bento-image-card">
+                                    <div class="bento-curtain"></div>
+                                    <img src="assets/images/service-image-4.webp" alt="Copper Pipe Restoration"
+                                        loading="lazy" />
+                                    <div class="ba-gallery-overlay">
+                                        <div class="ba-gallery-title">Copper Pipe Restoration</div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 5: Gallery Image 4 -->
+                                <div class="bento-card bento-image-card">
+                                    <div class="bento-curtain"></div>
+                                    <img src="assets/images/service-image-5.webp" alt="Kitchen Sink Installation"
+                                        loading="lazy" />
+                                    <div class="ba-gallery-overlay">
+                                        <div class="ba-gallery-title">Kitchen Sink Installation</div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 6: Bento Info CTA Card -->
+                                <div class="bento-card bento-info-card">
+                                    <h4 class="heading-style-h4" style="font-size: 1.15rem; font-weight: 700;">Need
+                                        Plumbing Solutions?</h4>
+                                    <p>Our certified technicians are on call 24/7 to solve your leaks, sewer clogs, and
+                                        piping installations with guaranteed quality care.</p>
+                                    <a href="#" class="button is-secondary"
+                                        style="margin-top: 0.25rem; font-size: 0.8rem; padding: 0.5rem 1rem; align-self: flex-start; background-color: var(--color-primary); color: var(--color-secondary); text-decoration: none;">
+                                        <div>Contact Us</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Draggable Slider Interaction Script -->
+                        <script type="text/javascript">
+                            document.addEventListener("DOMContentLoaded", function () {
+                                var container = document.querySelector(".bento-slider-card");
+                                if (!container) return;
+                                var slider = container.querySelector(".ba-slider");
+                                var resize = container.querySelector(".ba-resize");
+                                var handle = container.querySelector(".ba-handle");
+
+                                var sliderWidth;
+
+                                function updateWidths() {
+                                    sliderWidth = slider.offsetWidth;
+                                    var imgAfter = resize.querySelector("img");
+                                    if (imgAfter && sliderWidth > 0) {
+                                        imgAfter.style.width = sliderWidth + "px";
+                                        imgAfter.style.minWidth = sliderWidth + "px";
+                                        imgAfter.style.maxWidth = "none";
+                                    }
+                                }
+
+                                if (window.ResizeObserver) {
+                                    new ResizeObserver(updateWidths).observe(slider);
+                                }
+                                window.addEventListener("load", updateWidths);
+                                window.addEventListener("resize", updateWidths);
+                                updateWidths();
+
+                                var isDragging = false;
+
+                                function move(clientX) {
+                                    var rect = slider.getBoundingClientRect();
+                                    var x = clientX - rect.left;
+                                    if (x < 0) x = 0;
+                                    if (x > sliderWidth) x = sliderWidth;
+
+                                    var pct = (x / sliderWidth) * 100;
+                                    resize.style.width = pct + "%";
+                                    handle.style.left = pct + "%";
+                                }
+
+                                handle.addEventListener("mousedown", function (e) {
+                                    isDragging = true;
+                                    e.preventDefault();
+                                });
+
+                                slider.addEventListener("mousedown", function (e) {
+                                    isDragging = true;
+                                    move(e.clientX);
+                                });
+
+                                window.addEventListener("mouseup", function () {
+                                    isDragging = false;
+                                });
+
+                                window.addEventListener("mousemove", function (e) {
+                                    if (!isDragging) return;
+                                    move(e.clientX);
+                                });
+
+                                // Touch support
+                                handle.addEventListener("touchstart", function (e) {
+                                    isDragging = true;
+                                });
+
+                                slider.addEventListener("touchstart", function (e) {
+                                    isDragging = true;
+                                    move(e.touches[0].clientX);
+                                });
+
+                                window.addEventListener("touchend", function () {
+                                    isDragging = false;
+                                });
+
+                                window.addEventListener("touchmove", function (e) {
+                                    if (!isDragging) return;
+                                    move(e.touches[0].clientX);
+                                });
+
+                                // Book-Page / Curtain Image Reveal Observer
+                                var imageCards = document.querySelectorAll(".ba-bento-grid .bento-image-card");
+                                if (imageCards.length > 0) {
+                                    var bentoObserver = new IntersectionObserver(function (entries, observer) {
+                                        entries.forEach(function (entry) {
+                                            if (entry.isIntersecting) {
+                                                var cardsArray = Array.from(imageCards);
+                                                var idx = cardsArray.indexOf(entry.target);
+                                                setTimeout(function () {
+                                                    entry.target.classList.add("revealed");
+                                                }, idx * 150);
+                                                observer.unobserve(entry.target);
+                                            }
+                                        });
+                                    }, { threshold: 0.2, rootMargin: "0px 0px -30px 0px" });
+
+                                    imageCards.forEach(function (card) {
+                                        bentoObserver.observe(card);
+                                    });
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-packege">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="padding-section-large">
+                        <div class="packege-component">
+                            <div class="packege-top-content">
+                                <h2 class="heading-style-h2">Transparent pricing for quality plumbing services you can
+                                    trust.</h2>
+                                <div class="text-size-regular">Quality electrical and plumbing products distributed directly in Andalusia, Alabama with clear product information and reliable service.</div>
+                            </div>
+                            <div class="padding-bottom padding-large"></div>
+                            <div data-delay="4000" data-animation="slide" class="packege-slide w-slider"
+                                data-autoplay="false" data-easing="ease" data-hide-arrows="false"
+                                data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3"
+                                data-duration="500" data-infinite="true">
+                                <div class="packege-mask w-slider-mask">
+                                    <div class="packege-slide w-slide">
+                                        <div class="packege-collection-list-wrapper w-dyn-list">
+                                            <div role="list" class="packege-collection-list w-dyn-items">
+                                                <div role="listitem" class="packege-collection-item w-dyn-item">
+                                                    <div class="packege-card"><a href="#"
+                                                            class="packege-image-wrapper w-inline-block"><img
+                                                                loading="lazy"
+                                                                data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
+                                                                src="assets/images/service-image-6.webp" alt=""
+                                                                sizes="100vw" class="packege-image" />
+                                                            <div class="overly"></div>
+                                                        </a>
+                                                        <div class="packege-content-wrapper">
+                                                            <div class="packege-butom-content">
+                                                                <h5 class="heading-style-h5">Drain Cleaning Solutions
+                                                                </h5>
+                                                                <div class="packege-content">
+                                                                    <div class="text-size-regular">Start from :</div>
+                                                                    <div class="packege-right-content-content">
+                                                                        <h6 data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
+                                                                            class="heading-style-h6">200.00USD</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="listitem" class="packege-collection-item w-dyn-item">
+                                                    <div class="packege-card"><a href="#"
+                                                            class="packege-image-wrapper w-inline-block"><img
+                                                                loading="lazy"
+                                                                data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
+                                                                src="assets/images/service-image-5.webp" alt=""
+                                                                sizes="100vw" class="packege-image" />
+                                                            <div class="overly"></div>
+                                                        </a>
+                                                        <div class="packege-content-wrapper">
+                                                            <div class="packege-butom-content">
+                                                                <h5 class="heading-style-h5">Pipe Repair Services</h5>
+                                                                <div class="packege-content">
+                                                                    <div class="text-size-regular">Start from :</div>
+                                                                    <div class="packege-right-content-content">
+                                                                        <h6 data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
+                                                                            class="heading-style-h6">300.00 USD</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="listitem" class="packege-collection-item w-dyn-item">
+                                                    <div class="packege-card"><a href="#"
+                                                            class="packege-image-wrapper w-inline-block"><img
+                                                                loading="lazy"
+                                                                data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
+                                                                src="assets/images/service-image-4.webp" alt=""
+                                                                sizes="100vw" class="packege-image" />
+                                                            <div class="overly"></div>
+                                                        </a>
+                                                        <div class="packege-content-wrapper">
+                                                            <div class="packege-butom-content">
+                                                                <h5 class="heading-style-h5">Leak Detection Experts</h5>
+                                                                <div class="packege-content">
+                                                                    <div class="text-size-regular">Start from :</div>
+                                                                    <div class="packege-right-content-content">
+                                                                        <h6 data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
+                                                                            class="heading-style-h6">200.00 USD</h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-slide"></div>
+                                </div>
+                                <div class="packege-left-arrow w-slider-arrow-left">
+                                    <div class="w-icon-slider-left"></div>
+                                </div>
+                                <div class="packege-right-arrow w-slider-arrow-right">
+                                    <div class="w-icon-slider-right"></div>
+                                </div>
+                                <div class="slide-nav w-slider-nav w-round w-num"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Same-Day Service Map Section -->
+        <div class="section-map"
+            style="background-color: var(--color-white); border-bottom: 1px solid rgba(14, 14, 14, 0.05);">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="padding-section-large" style="padding-top: 5rem; padding-bottom: 5rem;">
+                        <!-- Map Section Custom CSS -->
+                        <style>
+                            .map-header {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-end;
+                                gap: 3rem;
+                                margin-bottom: 4rem;
+                            }
+
+                            .map-header-left {
+                                max-width: 600px;
+                            }
+
+                            .map-heading {
+                                font-family: var(--font--heading-font);
+                                font-size: 3.5rem;
+                                font-weight: 700;
+                                color: var(--color-secondary);
+                                line-height: 1.1;
+                                margin: 0 0 1rem 0;
+                                letter-spacing: -0.02em;
+                            }
+
+                            .map-subtitle {
+                                font-family: var(--font--paragraph-font);
+                                font-size: 1.05rem;
+                                line-height: 1.6;
+                                color: var(--color-dark);
+                                opacity: 0.8;
+                                margin: 0;
+                            }
+
+                            .map-header-right {
+                                flex-shrink: 0;
+                            }
+
+                            /* Map Area */
+                            .map-interactive-container {
+                                position: relative;
+                                max-width: 1000px;
+                                width: 100%;
+                                margin: 0 auto;
+                                user-select: none;
+                            }
+
+                            .map-bg-image {
+                                width: 100%;
+                                height: auto;
+                                display: block;
+                            }
+
+                            /* Pins & Tooltips */
+                            .map-pin {
+                                position: absolute;
+                                transform: translate(-50%, -50%);
+                                cursor: pointer;
+                                z-index: 10;
+                            }
+
+                            /* Dot styles */
+                            .map-dot {
+                                width: 12px;
+                                height: 12px;
+                                background-color: #0066ff;
+                                border-radius: 50%;
+                                position: relative;
+                                box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.2);
+                                transition: transform 0.3s ease;
+                            }
+
+                            .map-pin:hover .map-dot {
+                                transform: scale(1.3);
+                                background-color: var(--color-accent);
+                                box-shadow: 0 0 0 6px rgba(255, 124, 51, 0.3);
+                            }
+
+                            /* Pulse effect */
+                            .map-dot::after {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                                box-shadow: 0 0 0 8px rgba(0, 102, 255, 0.4);
+                                animation: map-pin-pulse 2s infinite ease-out;
+                            }
+
+                            .map-pin:hover .map-dot::after {
+                                box-shadow: 0 0 0 8px rgba(255, 124, 51, 0.4);
+                            }
+
+                            @keyframes map-pin-pulse {
+                                0% {
+                                    transform: scale(1);
+                                    opacity: 1;
+                                }
+
+                                100% {
+                                    transform: scale(2.2);
+                                    opacity: 0;
+                                }
+                            }
+
+                            /* Rich Tooltip Card */
+                            .map-tooltip-card {
+                                position: absolute;
+                                bottom: 24px;
+                                left: 50%;
+                                transform: translateX(-50%) translateY(8px);
+                                background: #ffffff;
+                                border: 1px solid rgba(1, 32, 92, 0.12);
+                                border-radius: 0.75rem;
+                                padding: 0.85rem 1.15rem;
+                                box-shadow: 0 10px 30px rgba(1, 32, 92, 0.18);
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s ease;
+                                z-index: 25;
+                                min-width: 230px;
+                                text-align: left;
+                                pointer-events: none;
+                            }
+
+                            .map-tooltip-card::after {
+                                content: '';
+                                position: absolute;
+                                top: 100%;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                border-width: 7px;
+                                border-style: solid;
+                                border-color: #ffffff transparent transparent transparent;
+                            }
+
+                            /* Active or Hover State */
+                            .map-pin.is-active .map-tooltip-card,
+                            .map-pin:hover .map-tooltip-card {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translateX(-50%) translateY(0);
+                            }
+
+                            .map-city-title {
+                                font-family: var(--font--heading-font);
+                                font-size: 0.95rem;
+                                font-weight: 700;
+                                color: var(--color-secondary);
+                                margin-bottom: 0.25rem;
+                                display: flex;
+                                align-items: center;
+                                gap: 0.3rem;
+                            }
+
+                            .map-shop-address {
+                                font-family: var(--font--paragraph-font);
+                                font-size: 0.78rem;
+                                color: #475569;
+                                line-height: 1.35;
+                                margin-bottom: 0.45rem;
+                                white-space: nowrap;
+                            }
+
+                            .map-dispatch-tag {
+                                display: inline-block;
+                                font-family: var(--font--paragraph-font);
+                                font-size: 0.7rem;
+                                font-weight: 700;
+                                color: #0284c7;
+                                background-color: #f0f9ff;
+                                border: 1px solid #bae6fd;
+                                padding: 0.2rem 0.55rem;
+                                border-radius: 50px;
+                                white-space: nowrap;
+                            }
+
+                            /* Modal/Popup Alert */
+                            .map-alert {
+                                position: fixed;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%) scale(0.9);
+                                background-color: var(--color-white);
+                                border: 2px solid var(--color-secondary);
+                                border-radius: 1rem;
+                                padding: 2.5rem;
+                                box-shadow: 0 20px 50px rgba(1, 32, 92, 0.15);
+                                z-index: 9999;
+                                max-width: 450px;
+                                width: 90%;
+                                text-align: center;
+                                display: none;
+                                opacity: 0;
+                                transition: opacity 0.3s ease, transform 0.3s ease;
+                            }
+
+                            .map-alert.is-show {
+                                display: block;
+                                opacity: 1;
+                                transform: translate(-50%, -50%) scale(1);
+                            }
+
+                            .map-alert-overlay {
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                width: 100vw;
+                                height: 100vh;
+                                background-color: rgba(1, 32, 92, 0.4);
+                                z-index: 9998;
+                                display: none;
+                            }
+
+                            .map-alert-overlay.is-show {
+                                display: block;
+                            }
+
+                            @media screen and (max-width: 991px) {
+                                .map-header {
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    gap: 1.5rem;
+                                }
+
+                                .map-heading {
+                                    font-size: 2.8rem;
+                                }
+                            }
+
+                            @media screen and (max-width: 767px) {
+                                .map-tooltip-card {
+                                    min-width: 170px;
+                                    max-width: 72vw;
+                                    padding: 0.6rem 0.75rem;
+                                }
+
+                                .map-city-title {
+                                    font-size: 0.82rem;
+                                }
+
+                                .map-shop-address {
+                                    white-space: normal;
+                                    font-size: 0.7rem;
+                                    word-break: break-word;
+                                    margin-bottom: 0.35rem;
+                                }
+
+                                .map-dispatch-tag {
+                                    font-size: 0.62rem;
+                                    padding: 0.15rem 0.45rem;
+                                }
+
+                                /* Left side pins (Oregon & California) - Prevent left edge overflow */
+                                .map-pin[style*="left: 21"],
+                                .map-pin[style*="left: 19"] {
+                                    z-index: 30;
+                                }
+
+                                .map-pin[style*="left: 21"] .map-tooltip-card,
+                                .map-pin[style*="left: 19"] .map-tooltip-card {
+                                    left: -12px !important;
+                                    transform: translateY(6px) !important;
+                                }
+
+                                .map-pin[style*="left: 21"].is-active .map-tooltip-card,
+                                .map-pin[style*="left: 19"].is-active .map-tooltip-card,
+                                .map-pin[style*="left: 21"]:hover .map-tooltip-card,
+                                .map-pin[style*="left: 19"]:hover .map-tooltip-card {
+                                    transform: translateY(0) !important;
+                                }
+
+                                .map-pin[style*="left: 21"] .map-tooltip-card::after,
+                                .map-pin[style*="left: 19"] .map-tooltip-card::after {
+                                    left: 18px !important;
+                                    transform: none !important;
+                                }
+
+                                /* Right side pins (New York & Florida) - Prevent right edge overflow */
+                                .map-pin[style*="left: 84"],
+                                .map-pin[style*="left: 78"] {
+                                    z-index: 30;
+                                }
+
+                                .map-pin[style*="left: 84"] .map-tooltip-card,
+                                .map-pin[style*="left: 78"] .map-tooltip-card {
+                                    left: auto !important;
+                                    right: -12px !important;
+                                    transform: translateY(6px) !important;
+                                }
+
+                                .map-pin[style*="left: 84"].is-active .map-tooltip-card,
+                                .map-pin[style*="left: 78"].is-active .map-tooltip-card,
+                                .map-pin[style*="left: 84"]:hover .map-tooltip-card,
+                                .map-pin[style*="left: 78"]:hover .map-tooltip-card {
+                                    transform: translateY(0) !important;
+                                }
+
+                                .map-pin[style*="left: 84"] .map-tooltip-card::after,
+                                .map-pin[style*="left: 78"] .map-tooltip-card::after {
+                                    left: auto !important;
+                                    right: 18px !important;
+                                    transform: none !important;
+                                }
+                            }
+
+                            @media screen and (max-width: 479px) {
+                                .map-heading {
+                                    font-size: 2.2rem;
+                                }
+                            }
+                        </style>
+
+                        <!-- Header Row -->
+                        <div class="map-header">
+                            <div class="map-header-left">
+                                <h2 class="heading-style-h2" style="margin-bottom: 1rem;">Same-Day Service<br />Across
+                                    the USA</h2>
+                                <p class="map-subtitle">Tap the map to quickly find out if our same-day service is
+                                    available in your area. Simply select your location, and we'll let you know right
+                                    away if we can serve you.</p>
+                            </div>
+                            <div class="map-header-right">
+                                <a href="#instant-quote-form" class="button hover-color-brand-color w-inline-block">
+                                    <div>Get a free quote &rarr;</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Map Container -->
+                        <div class="map-interactive-container">
+                            <img src="assets/images/map.svg" alt="USA Coverage Map" class="map-bg-image" />
+
+                            <!-- Active Service Pins (absolute positioned) -->
+
+                            <!-- Oregon Pin (Active by default) -->
+                            <div class="map-pin is-active" style="top: 27%; left: 21.5%;"
+                                onclick="showCoverageAlert('Oregon')">
+                                <div class="map-dot"></div>
+                                <div class="map-tooltip-card">
+                                    <div class="map-city-title">📍 Portland, OR</div>
+                                    <div class="map-shop-address">1220 SW Morrison St, Portland, OR 97205</div>
+                                    <span class="map-dispatch-tag">⚡ Active Dispatch • 30-Min Arrival</span>
+                                </div>
+                            </div>
+
+                            <!-- California Pin -->
+                            <div class="map-pin" style="top: 50%; left: 19%;" onclick="showCoverageAlert('California')">
+                                <div class="map-dot"></div>
+                                <div class="map-tooltip-card">
+                                    <div class="map-city-title">📍 Los Angeles, CA</div>
+                                    <div class="map-shop-address">633 W 5th St, Los Angeles, CA 90071</div>
+                                    <span class="map-dispatch-tag">⚡ Active Dispatch • 30-Min Arrival</span>
+                                </div>
+                            </div>
+
+                            <!-- Texas Pin -->
+                            <div class="map-pin" style="top: 72%; left: 45%;" onclick="showCoverageAlert('Texas')">
+                                <div class="map-dot"></div>
+                                <div class="map-tooltip-card">
+                                    <div class="map-city-title">📍 Austin, TX</div>
+                                    <div class="map-shop-address">500 W 2nd St, Austin, TX 78701</div>
+                                    <span class="map-dispatch-tag">⚡ Active Dispatch • 30-Min Arrival</span>
+                                </div>
+                            </div>
+
+                            <!-- Illinois Pin -->
+                            <div class="map-pin" style="top: 40%; left: 63%;" onclick="showCoverageAlert('Illinois')">
+                                <div class="map-dot"></div>
+                                <div class="map-tooltip-card">
+                                    <div class="map-city-title">📍 Chicago, IL</div>
+                                    <div class="map-shop-address">233 S Wacker Dr, Chicago, IL 60606</div>
+                                    <span class="map-dispatch-tag">⚡ Active Dispatch • 30-Min Arrival</span>
+                                </div>
+                            </div>
+
+                            <!-- New York Pin -->
+                            <div class="map-pin" style="top: 32%; left: 84%;" onclick="showCoverageAlert('New York')">
+                                <div class="map-dot"></div>
+                                <div class="map-tooltip-card">
+                                    <div class="map-city-title">📍 New York, NY</div>
+                                    <div class="map-shop-address">350 5th Ave, New York, NY 10118</div>
+                                    <span class="map-dispatch-tag">⚡ Active Dispatch • 30-Min Arrival</span>
+                                </div>
+                            </div>
+
+                            <!-- Florida Pin -->
+                            <div class="map-pin" style="top: 80%; left: 78%;" onclick="showCoverageAlert('Florida')">
+                                <div class="map-dot"></div>
+                                <div class="map-tooltip-card">
+                                    <div class="map-city-title">📍 Miami, FL</div>
+                                    <div class="map-shop-address">600 Brickell Ave, Miami, FL 33131</div>
+                                    <span class="map-dispatch-tag">⚡ Active Dispatch • 30-Min Arrival</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coverage Alert Modal -->
+        <div class="map-alert-overlay" id="mapOverlay" onclick="closeCoverageAlert()"></div>
+        <div class="map-alert" id="mapAlert">
+            <h4 class="heading-style-h4" style="color: var(--color-secondary); margin-bottom: 1rem;" id="mapAlertTitle">
+                Service Available!</h4>
+            <p class="text-size-regular" style="margin-bottom: 2rem; opacity: 0.85;">Great news! Our certified
+                professional plumbers are active in <span id="mapAlertState"
+                    style="font-weight: 700; color: var(--color-accent);"></span>. We offer 30-minute response
+                dispatching in this region.</p>
+            <button class="button" style="width: 100%; border: none;" onclick="navigateToQuoteForm()">Book Same-Day
+                Visit</button>
+            <div style="margin-top: 1rem; cursor: pointer; text-decoration: underline; font-size: 0.85rem; opacity: 0.6;"
+                onclick="closeCoverageAlert()">Close</div>
+        </div>
+
+        <script>
+            function showCoverageAlert(stateName) {
+                document.getElementById('mapAlertState').innerText = stateName;
+                document.getElementById('mapOverlay').style.display = 'block';
+                document.getElementById('mapAlert').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('mapOverlay').classList.add('is-show');
+                    document.getElementById('mapAlert').classList.add('is-show');
+                }, 10);
+            }
+
+            function closeCoverageAlert() {
+                document.getElementById('mapOverlay').classList.remove('is-show');
+                document.getElementById('mapAlert').classList.remove('is-show');
+                setTimeout(() => {
+                    document.getElementById('mapOverlay').style.display = 'none';
+                    document.getElementById('mapAlert').style.display = 'none';
+                }, 300);
+            }
+
+            function navigateToQuoteForm() {
+                closeCoverageAlert();
+                // Scroll to the quote form section
+                const quoteForm = document.getElementById('instant-quote-form');
+                if (quoteForm) {
+                    quoteForm.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+
+            // Dynamic 5-Second Looping Tooltip Box for 6 Map Pins
+            document.addEventListener("DOMContentLoaded", function () {
+                const mapPins = document.querySelectorAll(".map-interactive-container .map-pin");
+                if (!mapPins.length) return;
+
+                let currentIndex = 0;
+                let pinInterval = null;
+
+                function activatePin(index) {
+                    mapPins.forEach((pin, i) => {
+                        if (i === index) {
+                            pin.classList.add("is-active");
+                        } else {
+                            pin.classList.remove("is-active");
+                        }
+                    });
+                    currentIndex = index;
+                }
+
+                function startPinLoop() {
+                    if (pinInterval) clearInterval(pinInterval);
+                    pinInterval = setInterval(() => {
+                        currentIndex = (currentIndex + 1) % mapPins.length;
+                        activatePin(currentIndex);
+                    }, 5000); // 5 seconds per point
+                }
+
+                activatePin(0);
+                startPinLoop();
+
+                const mapContainer = document.querySelector(".map-interactive-container");
+                if (mapContainer) {
+                    mapContainer.addEventListener("mouseenter", function () {
+                        if (pinInterval) clearInterval(pinInterval);
+                    });
+                    mapContainer.addEventListener("mouseleave", function () {
+                        startPinLoop();
+                    });
+                }
+            });
+        </script>
+
+        <!-- FAQ Section -->
+        <div class="section-faq" style="background-color: var(--neutral--white-200);">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="padding-section-large">
+                        <!-- FAQ Custom Styling -->
+                        <style>
+                            .faq-grid {
+                                max-width: 800px;
+                                width: 100%;
+                                margin: 0 auto;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1rem;
+                            }
+
+                            .faq-item {
+                                background-color: #ffffff;
+                                border-radius: 0.75rem;
+                                overflow: hidden;
+                                border: 1px solid rgba(0, 0, 0, 0.06);
+                                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+                                transition: all 0.3s ease;
+                            }
+
+                            .faq-item:hover {
+                                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+                            }
+
+                            .faq-item[open] {
+                                border-color: var(--color-secondary);
+                                background-color: #ffffff;
+                            }
+
+                            .faq-summary {
+                                padding: 1.5rem;
+                                font-family: var(--font--heading-font);
+                                font-size: 1.05rem;
+                                font-weight: 700;
+                                color: var(--color-secondary);
+                                cursor: pointer;
+                                list-style: none;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                user-select: none;
+                            }
+
+                            .faq-summary::-webkit-details-marker {
+                                display: none;
+                            }
+
+                            .faq-summary-icon {
+                                width: 20px;
+                                height: 20px;
+                                color: var(--color-secondary);
+                                transition: transform 0.3s ease, color 0.3s ease;
+                            }
+
+                            .faq-item[open] .faq-summary-icon {
+                                transform: rotate(180deg);
+                                color: var(--color-secondary);
+                            }
+
+                            .faq-content {
+                                padding: 0 1.5rem 1.5rem 1.5rem;
+                                font-family: var(--font--paragraph-font);
+                                font-size: 0.95rem;
+                                line-height: 1.6;
+                                color: var(--color-dark);
+                                opacity: 0.85;
+                            }
+                        </style>
+
+                        <div class="blog-component">
+                            <!-- Top Header Block -->
+                            <div class="blog-top-content-wrapper"
+                                style="text-align: center; justify-content: center; display: flex;">
+                                <div class="blog-top-content"
+                                    style="text-align: center; max-width: 680px; width: 100%;">
+                                    <h2 class="heading-style-h2">Frequently Asked Questions</h2>
+                                    <div class="text-size-regular" style="margin-top: 0.5rem;">Have questions about our
+                                        plumbing services? Find quick answers below regarding emergency responses, leak
+                                        repairs, and routine maintenance.</div>
+                                </div>
+                            </div>
+                            <div class="padding-bottom padding-large"></div>
+
+                            <!-- FAQ Grid -->
+                            <div class="faq-grid">
+                                <!-- Question 1 -->
+                                <details class="faq-item" open>
+                                    <summary class="faq-summary">
+                                        <span>What should I do first in a plumbing emergency?</span>
+                                        <svg class="faq-summary-icon" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </summary>
+                                    <div class="faq-content">
+                                        Locate and shut off the main water valve immediately to stop the flow of water
+                                        and prevent structural damage. Once the valve is closed, call our 24/7 emergency
+                                        dispatch line for a technician to be sent out immediately.
+                                    </div>
+                                </details>
+
+                                <!-- Question 2 -->
+                                <details class="faq-item">
+                                    <summary class="faq-summary">
+                                        <span>How quickly can your plumbers respond to emergency calls?</span>
+                                        <svg class="faq-summary-icon" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </summary>
+                                    <div class="faq-content">
+                                        For active emergencies (such as burst pipes or severe clogs), we guarantee a
+                                        response and dispatch time of 30 minutes or less to ensure your home remains
+                                        safe.
+                                    </div>
+                                </details>
+
+                                <!-- Question 3 -->
+                                <details class="faq-item">
+                                    <summary class="faq-summary">
+                                        <span>What are the most common signs of a hidden water leak?</span>
+                                        <svg class="faq-summary-icon" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </summary>
+                                    <div class="faq-content">
+                                        Common warning signs include an unexplained increase in your water bill, damp or
+                                        discolored spots on drywall/ceilings, musty mildew odors, or hearing running
+                                        water when all plumbing appliances are switched off.
+                                    </div>
+                                </details>
+
+                                <!-- Question 4 -->
+                                <details class="faq-item">
+                                    <summary class="faq-summary">
+                                        <span>How can I prevent my drain lines from getting clogged?</span>
+                                        <svg class="faq-summary-icon" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </summary>
+                                    <div class="faq-content">
+                                        Avoid pouring cooking oils or fats down kitchen sinks, use hair catches in
+                                        shower drains, and only flush toilet paper. Regular hot-water rinses can also
+                                        help clear minor residue buildup.
+                                    </div>
+                                </details>
+
+                                <!-- Question 5 -->
+                                <details class="faq-item">
+                                    <summary class="faq-summary">
+                                        <span>Why is my water heater making a loud knocking noise?</span>
+                                        <svg class="faq-summary-icon" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </summary>
+                                    <div class="faq-content">
+                                        Knocking or popping noises usually point to sediment buildup at the base of the
+                                        tank. Flushing the water heater annually removes this sediment, improves heating
+                                        efficiency, and prolongs the lifespan of your unit.
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-footer">
+            <div class="padding-global">
+                <div class="container-large">
+                    <div class="footer-component">
+                        <div class="w-layout-grid footer-grid">
+                            <div id="w-node-_6a7d9bad-42e2-19e8-d6ea-23b8e477bf89-e477bf84"
+                                class="footer-left-content-wrapper">
+                                <div class="footer-left-top-content-wrapper">
+                                    <div class="footer-left-top-content"><a href="#" aria-current="page"
+                                            class="footer-logo-wrapper w-inline-block w--current"><img
+                                                src="assets/icons/nav-logo.svg" loading="lazy" alt="Nav Logo"
+                                                class="footer-logo" /></a>
+                                        <div class="text-size-regular light">Your trusted electrical and plumbing supplier in Andalusia.</div>
+                                    </div>
+                                    <a href="#" target="_blank" class="footet-quik-contact w-inline-block">
+                                        <div class="text-size-regular is-color-200">Address :</div>
+                                        <div class="text-size-small text-color-white-300">900 Dr MLK Jr Expy, Andalusia
+                                        </div>
+                                    </a>
+                                    <div class="footet-quik-contact">
+                                        <div class="text-size-regular is-color-200">Contact :</div><a href="#"
+                                            class="text-size-small text-color-white-300">334-222-1799</a><a
+                                            href="#" class="text-size-small text-color-white-300">Southeastelectricplumbing@gmail.com</a>
+                                    </div>
+                                </div>
+                                <style>
+                                    .footer-social-link-wrapper {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 0.75rem;
+                                        flex-wrap: wrap;
+                                    }
+                                    .footer-social-icon {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 40px;
+                                        height: 40px;
+                                        border-radius: 50%;
+                                        background: rgba(255,255,255,0.08);
+                                        border: 1px solid rgba(255,255,255,0.12);
+                                        transition: background 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+                                        text-decoration: none;
+                                    }
+                                    .footer-social-icon:hover {
+                                        background: rgba(255,255,255,0.18);
+                                        border-color: rgba(255,255,255,0.3);
+                                        transform: translateY(-2px);
+                                    }
+                                    .footer-social-icon svg {
+                                        width: 18px;
+                                        height: 18px;
+                                        fill: rgba(255,255,255,0.8);
+                                        transition: fill 0.25s ease;
+                                        flex-shrink: 0;
+                                    }
+                                    .footer-social-icon:hover svg {
+                                        fill: #ffffff;
+                                    }
+                                </style>
+                                <div class="footer-social-link-wrapper">
+                                    <!-- Facebook -->
+                                    <a href="#" target="_blank" class="footer-social-icon w-inline-block" aria-label="Facebook">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                                    </a>
+                                    <!-- Instagram -->
+                                    <a href="#" target="_blank" class="footer-social-icon w-inline-block" aria-label="Instagram">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round"/></svg>
+                                    </a>
+                                    <!-- X (Twitter) -->
+                                    <a href="#" target="_blank" class="footer-social-icon w-inline-block" aria-label="X / Twitter">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.733-8.835L2.25 2.25h6.773l4.258 5.632L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                    </a>
+                                    <!-- LinkedIn -->
+                                    <a href="#" target="_blank" class="footer-social-icon w-inline-block" aria-label="LinkedIn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer-link-list-wrapper">
+                                <h6 class="heading-style-h6 text-color-white-300">Main page</h6>
+                                <div class="footer-list"><a data-w-id="6a7d9bad-42e2-19e8-d6ea-23b8e477bfa9" href="#"
+                                        aria-current="page" class="footer-link w--current">Home</a><a href="#"
+                                        class="footer-link">About</a><a href="#" class="footer-link">Contact</a></div>
+                            </div>
+                            <div class="footer-link-list-wrapper">
+                                <h6 class="heading-style-h6 text-color-white-300">Inner page</h6>
+                                <div class="footer-list"><a href="#" class="footer-link">Blog</a><a href="#"
+                                        class="footer-link">Service</a><a href="#" class="footer-link">Team</a><a
+                                        href="#" class="footer-link">Package </a></div>
+                            </div>
+                            <div class="footer-link-list-wrapper">
+                                <h6 class="heading-style-h6 text-color-white-300">Inner page</h6>
+                                <div class="footer-list"><a href="#" class="footer-link">Blog details</a><a href="#"
+                                        class="footer-link">Service details</a>
+                                    <a href="#" class="footer-link">Team Details</a><a href="#"
+                                        class="footer-link">Package details</a>
+                                </div>
+                            </div>
+                            <div class="footer-link-list-wrapper">
+                                <h6 class="heading-style-h6 text-color-white-300">Utility page</h6>
+                                <div class="footer-list"><a href="#" class="footer-link">Style guide</a><a href="#"
+                                        class="footer-link">Licenses</a><a href="#" class="footer-link">404 not
+                                        found</a><a href="#" class="footer-link">Password protected</a><a href="#"
+                                        class="footer-link">Change log</a></div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom-content">
+                            <div class="text-size-regular light">© 2026 Southeast Electric & Plumbing. All rights reserved.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <script src="js/webflow.schunk.fa046cbb9c58fdf2.js" type="text/javascript"></script>
+    <script src="js/webflow.schunk.1423c3ff89df4392.js" type="text/javascript"></script>
+    <script src="js/webflow.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // Intercept form submissions client-side and simulate Webflow inline success message
+        document.addEventListener("DOMContentLoaded", function () {
+            var forms = document.querySelectorAll("form");
+            forms.forEach(function (form) {
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    // Hide the form
+                    form.style.display = "none";
+                    // Find the parent wrapper and toggle Webflow's native success/fail elements
+                    var container = form.parentElement;
+                    if (container) {
+                        var successBlock = container.querySelector(".w-form-done");
+                        if (successBlock) {
+                            successBlock.style.display = "block";
+                        }
+                        var errorBlock = container.querySelector(".w-form-fail");
+                        if (errorBlock) {
+                            errorBlock.style.display = "none";
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
