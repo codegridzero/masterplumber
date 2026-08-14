@@ -178,22 +178,20 @@
             align-items: center !important;
             text-align: center !important;
             margin: 0 auto !important;
+            container-type: inline-size !important;
         }
 
         .about-display-overflow._02,
-        .about-display-overflow._03 {
-            max-width: 100% !important;
-        }
-
+        .about-display-overflow._03,
         .about-display-overflow._04 {
-            max-width: 100% !important;
+            max-width: 1060px !important;
         }
 
         /* Single Line Desktop Layout (white-space: nowrap) with Fluid Scale for Mobile/Tablet */
         .about-display-text,
         .about-display-text.is-opacity,
         .about-display-text._0 {
-            font-size: clamp(0.7rem, 2.2vw, 1.95rem) !important;
+            font-size: clamp(0.6rem, 2.1vw, 1.95rem) !important;
             line-height: 2.6rem !important;
             font-weight: 500 !important;
             letter-spacing: 0.01em !important;
@@ -227,6 +225,19 @@
             color: #0f172a !important;
             overflow: hidden !important;
             pointer-events: none !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+        }
+
+        /* Fixed Stationary Inner Text - Prevents text shifting during width 0% -> 100% animation */
+        .about-text-inner {
+            display: block !important;
+            width: 100cqw !important;
+            min-width: 100cqw !important;
+            text-align: center !important;
+            box-sizing: border-box !important;
+            white-space: nowrap !important;
         }
 
         /* Tablet Adjustments (<= 991px) */
@@ -235,7 +246,7 @@
             .about-display-text,
             .about-display-text.is-opacity,
             .about-display-text._0 {
-                font-size: clamp(0.6rem, 2.3vw, 1.65rem) !important;
+                font-size: clamp(0.55rem, 2.2vw, 1.65rem) !important;
                 line-height: 2.2rem !important;
             }
         }
@@ -246,7 +257,7 @@
             .about-display-text,
             .about-display-text.is-opacity,
             .about-display-text._0 {
-                font-size: clamp(0.45rem, 2.35vw, 1.1rem) !important;
+                font-size: clamp(0.48rem, 2.35vw, 1.1rem) !important;
                 line-height: 1.6rem !important;
             }
         }
@@ -733,39 +744,28 @@
                     <div class="padding-section-large padding-bottom-medium">
                         <div class="about-component">
                             <div class="about-display-overflow">
-                                <p class="about-display-text is-opacity">We pride ourselves on being your trusted local
-                                    plumbing experts.</p>
-                                <p data-w-id="3ee26237-a2cb-86d5-af11-f8ec7f3839e6" class="about-display-text _0">We
-                                    pride ourselves on being your trusted local plumbing experts.</p>
+                                <p class="about-display-text is-opacity">We pride ourselves on being your trusted local plumbing experts.</p>
+                                <p data-w-id="3ee26237-a2cb-86d5-af11-f8ec7f3839e6" class="about-display-text _0"><span class="about-text-inner">We pride ourselves on being your trusted local plumbing experts.</span></p>
                             </div>
                             <div class="about-display-overflow">
-                                <p class="about-display-text is-opacity">With 20 years of experience serving your
-                                    city/region, our mission</p>
-                                <p data-w-id="a31460fd-3b7a-4621-fcf7-d94e1d86015d" class="about-display-text _0">With
-                                    20 years of experience serving your city/region, our mission</p>
+                                <p class="about-display-text is-opacity">With 20 years of experience serving your city/region, our mission</p>
+                                <p data-w-id="a31460fd-3b7a-4621-fcf7-d94e1d86015d" class="about-display-text _0"><span class="about-text-inner">With 20 years of experience serving your city/region, our mission</span></p>
                             </div>
                             <div class="about-display-overflow">
-                                <p class="about-display-text is-opacity">is to provide high-quality, reliable plumbing
-                                    services that you can</p>
-                                <p data-w-id="f1696a8b-df91-92e5-0bfc-9526f6f72ee9" class="about-display-text _0">is to
-                                    provide high-quality, reliable plumbing services that you can</p>
+                                <p class="about-display-text is-opacity">is to provide high-quality, reliable plumbing services that you can</p>
+                                <p data-w-id="f1696a8b-df91-92e5-0bfc-9526f6f72ee9" class="about-display-text _0"><span class="about-text-inner">is to provide high-quality, reliable plumbing services that you can</span></p>
                             </div>
                             <div class="about-display-overflow _03">
-                                <p class="about-display-text is-opacity">depend on, whether it&#x27;s for your home or
-                                    business. From fixing</p>
-                                <p data-w-id="3b07d2a0-6796-e0bf-9d93-d31d429eaa01" class="about-display-text _0">depend
-                                    on, whether it&#x27;s for your home or business. From fixing</p>
+                                <p class="about-display-text is-opacity">depend on, whether it&#x27;s for your home or business. From fixing</p>
+                                <p data-w-id="3b07d2a0-6796-e0bf-9d93-d31d429eaa01" class="about-display-text _0"><span class="about-text-inner">depend on, whether it&#x27;s for your home or business. From fixing</span></p>
                             </div>
                             <div class="about-display-overflow _02">
-                                <p class="about-display-text is-opacity">leaks to full plumbing system installations, we
-                                    handle every job</p>
-                                <p data-w-id="600a4620-2db1-9845-9e49-8de69ccbe40d" class="about-display-text _0">leaks
-                                    to full plumbing system installations, we handle every job</p>
+                                <p class="about-display-text is-opacity">leaks to full plumbing system installations, we handle every job</p>
+                                <p data-w-id="600a4620-2db1-9845-9e49-8de69ccbe40d" class="about-display-text _0"><span class="about-text-inner">leaks to full plumbing system installations, we handle every job</span></p>
                             </div>
                             <div class="about-display-overflow _04">
                                 <p class="about-display-text is-opacity">with the utmost professionalism and care.</p>
-                                <p data-w-id="1fe4860e-a626-949c-f3f2-2f49d3b007b3" class="about-display-text _0">with
-                                    the utmost professionalism and care.</p>
+                                <p data-w-id="1fe4860e-a626-949c-f3f2-2f49d3b007b3" class="about-display-text _0"><span class="about-text-inner">with the utmost professionalism and care.</span></p>
                             </div>
                         </div>
                     </div>
@@ -3150,6 +3150,493 @@
                     }
                 });
             });
+        });
+    </script>
+
+    <!-- Floating Action Widgets (WhatsApp + AI Chat Bot) -->
+    <style>
+        .floating-widgets-wrapper {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 99999;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 14px;
+            font-family: var(--font--heading-font, Satoshi, sans-serif);
+        }
+
+        /* Floating Button Base */
+        .widget-bubble-btn {
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(1, 32, 92, 0.35);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            outline: none;
+        }
+
+        .widget-bubble-btn:hover {
+            transform: translateY(-4px) scale(1.06);
+            box-shadow: 0 14px 32px rgba(1, 32, 92, 0.45);
+        }
+
+        /* Tooltip */
+        .widget-tooltip {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--color-secondary, #01205c);
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 500;
+            padding: 7px 14px;
+            border-radius: 10px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 6px 18px rgba(1, 32, 92, 0.25);
+            border: 1px solid rgba(154, 230, 255, 0.3);
+        }
+
+        .widget-tooltip::after {
+            content: '';
+            position: absolute;
+            right: -6px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent var(--color-secondary, #01205c);
+        }
+
+        .widget-bubble-btn:hover .widget-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* WhatsApp Button - Branded Navy & Cyan Accent */
+        .btn-whatsapp {
+            background: linear-gradient(135deg, var(--color-secondary, #01205c), #093485);
+            border: 2px solid var(--color-primary, #9ae6ff);
+            color: var(--color-primary, #9ae6ff);
+        }
+
+        /* AI Chat Button - Branded Navy & Cyan Accent */
+        .btn-ai-chat {
+            background: linear-gradient(135deg, var(--color-secondary, #01205c), #093485);
+            border: 2px solid var(--color-primary, #9ae6ff);
+            color: var(--color-primary, #9ae6ff);
+        }
+
+        .ai-badge {
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            background: #ffffff;
+            color: var(--color-secondary, #01205c);
+            font-size: 11px;
+            font-weight: 800;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--color-primary, #9ae6ff);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            animation: pulse-badge 2s infinite;
+        }
+
+        @keyframes pulse-badge {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+
+        /* AI Chat Popup Window */
+        .ai-chat-popup {
+            position: absolute;
+            bottom: 74px;
+            right: 0;
+            width: 350px;
+            max-width: calc(100vw - 32px);
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(1, 32, 92, 0.3);
+            border: 1.5px solid var(--color-primary, #9ae6ff);
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px) scale(0.95);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            z-index: 100000;
+        }
+
+        .ai-chat-popup.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+        }
+
+        .ai-chat-header {
+            background: linear-gradient(135deg, var(--color-secondary, #01205c), #083280);
+            color: #ffffff;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(154, 230, 255, 0.2);
+        }
+
+        .ai-chat-header-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .ai-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--color-primary, #9ae6ff);
+            color: var(--color-secondary, #01205c);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .ai-chat-title {
+            font-size: 15px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.2;
+            color: #ffffff;
+            font-family: var(--font--heading-font, Satoshi, sans-serif);
+        }
+
+        .ai-chat-status {
+            font-size: 12px;
+            color: var(--color-primary, #9ae6ff);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 3px;
+            font-weight: 500;
+        }
+
+        .ai-chat-status::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #4ade80;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .ai-chat-close {
+            background: rgba(255, 255, 255, 0.12);
+            border: none;
+            color: #ffffff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s ease;
+        }
+
+        .ai-chat-close:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .ai-chat-body {
+            padding: 16px;
+            max-height: 340px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: #f8fafc;
+        }
+
+        .chat-msg {
+            max-width: 85%;
+            padding: 10px 14px;
+            border-radius: 14px;
+            font-size: 13.5px;
+            line-height: 1.45;
+            word-wrap: break-word;
+        }
+
+        .chat-msg.bot {
+            background: #ffffff;
+            color: #0f172a;
+            align-self: flex-start;
+            border-bottom-left-radius: 4px;
+            box-shadow: 0 2px 8px rgba(1, 32, 92, 0.06);
+            border: 1px solid #e2e8f0;
+        }
+
+        .chat-msg.user {
+            background: var(--color-secondary, #01205c);
+            color: #ffffff;
+            align-self: flex-end;
+            border-bottom-right-radius: 4px;
+        }
+
+        .ai-options-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 6px;
+        }
+
+        .ai-option-btn {
+            background: #ffffff;
+            border: 1.5px solid var(--color-secondary, #01205c);
+            color: var(--color-secondary, #01205c);
+            padding: 10px 14px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .ai-option-btn:hover {
+            background: var(--color-secondary, #01205c);
+            color: var(--color-primary, #9ae6ff);
+            border-color: var(--color-secondary, #01205c);
+            transform: translateX(3px);
+            box-shadow: 0 4px 12px rgba(1, 32, 92, 0.2);
+        }
+
+        .ai-chat-footer {
+            padding: 12px;
+            background: #ffffff;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            gap: 8px;
+        }
+
+        .ai-chat-input {
+            flex: 1;
+            border: 1px solid #cbd5e1;
+            border-radius: 20px;
+            padding: 8px 14px;
+            font-size: 13px;
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
+
+        .ai-chat-input:focus {
+            border-color: var(--color-secondary, #01205c);
+        }
+
+        .ai-chat-send {
+            background: var(--color-secondary, #01205c);
+            color: var(--color-primary, #9ae6ff);
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .ai-chat-send:hover {
+            background: #083280;
+            transform: scale(1.05);
+        }
+    </style>
+
+    <div class="floating-widgets-wrapper">
+        <!-- AI Chat Popup Window -->
+        <div class="ai-chat-popup" id="aiChatPopup">
+            <div class="ai-chat-header">
+                <div class="ai-chat-header-info">
+                    <div class="ai-avatar">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"></path>
+                            <rect x="4" y="8" width="16" height="12" rx="2"></rect>
+                            <circle cx="9" cy="13" r="1.5" fill="currentColor"></circle>
+                            <circle cx="15" cy="13" r="1.5" fill="currentColor"></circle>
+                            <path d="M10 17h4"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="ai-chat-title">Master Plumber AI</h4>
+                        <div class="ai-chat-status">Online & Ready to Help</div>
+                    </div>
+                </div>
+                <button class="ai-chat-close" id="aiChatCloseBtn" aria-label="Close Chat">&times;</button>
+            </div>
+            <div class="ai-chat-body" id="aiChatBody">
+                <div class="chat-msg bot">
+                    Welcome to Master Plumber! I'm your AI Assistant. How can we help you today?
+                </div>
+                <div class="ai-options-group" id="aiOptionsGroup">
+                    <button class="ai-option-btn" data-reply="I need emergency plumbing help right away!">
+                        Emergency Plumbing Service
+                    </button>
+                    <button class="ai-option-btn" data-reply="I would like a free estimate for a plumbing job.">
+                        Get Free Price Estimate
+                    </button>
+                    <button class="ai-option-btn" data-reply="How can I schedule an inspection or repair?">
+                        Schedule Plumbing Appointment
+                    </button>
+                </div>
+            </div>
+            <div class="ai-chat-footer">
+                <input type="text" class="ai-chat-input" id="aiChatInput" placeholder="Type a message..." />
+                <button class="ai-chat-send" id="aiChatSendBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- AI Chat Floating Button -->
+        <button class="widget-bubble-btn btn-ai-chat" id="aiChatToggleBtn" aria-label="AI Assistant">
+            <span class="ai-badge">1</span>
+            <span class="widget-tooltip">Ask AI Assistant</span>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"></path>
+                <rect x="4" y="8" width="16" height="12" rx="2"></rect>
+                <circle cx="9" cy="13" r="1.5" fill="currentColor"></circle>
+                <circle cx="15" cy="13" r="1.5" fill="currentColor"></circle>
+                <path d="M10 17h4"></path>
+            </svg>
+        </button>
+
+        <!-- WhatsApp Floating Button -->
+        <button class="widget-bubble-btn btn-whatsapp" id="whatsappToggleBtn" onclick="window.open('https://wa.me/15551234567', '_blank')" aria-label="WhatsApp Chat">
+            <span class="widget-tooltip">Chat on WhatsApp</span>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.763.459 3.486 1.333 5.002l-1.417 5.176 5.297-1.389c1.464.798 3.116 1.218 4.774 1.219h.004c5.507 0 9.99-4.478 9.99-9.985 0-2.668-1.039-5.176-2.926-7.062s-4.394-2.945-7.065-2.945zm5.836 14.124c-.244.688-1.42 1.314-1.96 1.393-.503.074-1.157.106-1.867-.121-.431-.138-.985-.319-1.696-.628-2.986-1.298-4.935-4.303-5.085-4.504-.15-.201-1.218-1.621-1.218-3.092 0-1.47.766-2.194 1.037-2.492.271-.299.593-.374.792-.374.199 0 .399.002.573.01.185.008.435-.07.68.518.252.604.858 2.09.933 2.242.075.152.125.33.025.53-.1.2-.15.324-.298.5-.15.175-.314.391-.448.525-.15.15-.306.314-.132.613.174.3.774 1.278 1.662 2.069 1.14 1.016 2.102 1.331 2.402 1.48.3.15.474.125.649-.075.175-.2.748-.873.948-1.172.2-.3.399-.25.674-.15.275.1.1.748 1.748 2.37.15.15.274.225.374.375.1.15.1.874-.144 1.562z"/>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var aiToggleBtn = document.getElementById("aiChatToggleBtn");
+            var aiCloseBtn = document.getElementById("aiChatCloseBtn");
+            var aiPopup = document.getElementById("aiChatPopup");
+            var aiBody = document.getElementById("aiChatBody");
+            var aiInput = document.getElementById("aiChatInput");
+            var aiSendBtn = document.getElementById("aiChatSendBtn");
+            var aiOptionsGroup = document.getElementById("aiOptionsGroup");
+
+            if (!aiToggleBtn || !aiPopup) return;
+
+            // Toggle Popup
+            aiToggleBtn.addEventListener("click", function () {
+                aiPopup.classList.toggle("active");
+            });
+
+            aiCloseBtn.addEventListener("click", function () {
+                aiPopup.classList.remove("active");
+            });
+
+            // Quick Option Clicks
+            if (aiOptionsGroup) {
+                var optionBtns = aiOptionsGroup.querySelectorAll(".ai-option-btn");
+                optionBtns.forEach(function (btn) {
+                    btn.addEventListener("click", function () {
+                        var text = this.getAttribute("data-reply");
+                        sendUserMessage(text);
+                    });
+                });
+            }
+
+            // Custom Message Send
+            function handleSend() {
+                var val = aiInput.value.trim();
+                if (val) {
+                    sendUserMessage(val);
+                    aiInput.value = "";
+                }
+            }
+
+            if (aiSendBtn) {
+                aiSendBtn.addEventListener("click", handleSend);
+            }
+
+            if (aiInput) {
+                aiInput.addEventListener("keypress", function (e) {
+                    if (e.key === "Enter") handleSend();
+                });
+            }
+
+            function sendUserMessage(text) {
+                // Hide options group after first click
+                if (aiOptionsGroup) {
+                    aiOptionsGroup.style.display = "none";
+                }
+
+                // Add User Message
+                var userDiv = document.createElement("div");
+                userDiv.className = "chat-msg user";
+                userDiv.textContent = text;
+                aiBody.appendChild(userDiv);
+                aiBody.scrollTop = aiBody.scrollHeight;
+
+                // Typing indicator
+                var typingDiv = document.createElement("div");
+                typingDiv.className = "chat-msg bot";
+                typingDiv.textContent = "AI is typing...";
+                setTimeout(function () {
+                    aiBody.appendChild(typingDiv);
+                    aiBody.scrollTop = aiBody.scrollHeight;
+                }, 300);
+
+                // Bot Response
+                setTimeout(function () {
+                    if (typingDiv.parentNode) {
+                        typingDiv.parentNode.removeChild(typingDiv);
+                    }
+                    var botDiv = document.createElement("div");
+                    botDiv.className = "chat-msg bot";
+
+                    var lower = text.toLowerCase();
+                    if (lower.includes("emergency")) {
+                        botDiv.innerHTML = "<strong>Emergency Service:</strong> Our licensed plumbers are available 24/7! Call <strong>(555) 123-4567</strong> or click the WhatsApp button for immediate dispatch.";
+                    } else if (lower.includes("estimate") || lower.includes("price")) {
+                        botDiv.innerHTML = "<strong>Free Quote:</strong> We offer 100% free, upfront estimates with no hidden fees! What service (leaks, drain, water heater) do you need?";
+                    } else if (lower.includes("schedule") || lower.includes("appointment")) {
+                        botDiv.innerHTML = "<strong>Booking:</strong> We can send a technician at your preferred time! Call us at (555) 123-4567 or reply with your preferred day.";
+                    } else {
+                        botDiv.innerHTML = "Thank you for reaching out! A Master Plumber specialist will assist you shortly. Feel free to call us directly for faster service.";
+                    }
+
+                    aiBody.appendChild(botDiv);
+                    aiBody.scrollTop = aiBody.scrollHeight;
+                }, 1000);
+            }
         });
     </script>
 </body>
